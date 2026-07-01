@@ -54,20 +54,39 @@ app/
 
 ## Endpoints
 
-| Method | Path | Ghi chú |
-|---|---|---|
-| GET | `/v1/config` | entitlement + tier + flags + iap_catalog + base_plans + free-daily |
-| POST | `/v1/user` | upsert user (idempotent theo uid) + lazy-refill |
-| POST | `/v1/events` | log event batch |
-| GET | `/v1/books`, `/v1/categories`, `/v1/search` | content |
-| GET | `/v1/books/{id}?uid=` | gate chương/audio theo `premium` + free-today |
-| POST/GET | `/v1/library`, DELETE/POST/GET `/v1/highlights` | thư viện + highlight |
-| POST | `/v1/progress`, GET `/v1/streak` | tiến độ + streak |
-| POST | `/v1/purchase/verify` | client gọi sau khi mua → flip `premium` |
-| POST | `/v1/purchase/restore` | khôi phục — chọn tier cao nhất active |
-| POST | `/webhook/play-billing` | Pub/Sub RTDN — **nguồn sự thật** |
+Đặt sẵn 2 biến shell cho gọn (server local, DEV stub mode), rồi paste curl ở cột bên phải:
 
-Header bắt buộc (mọi call trừ webhook): `Authorization: <APP_API_KEY>`.
+```bash
+H=http://127.0.0.1:8000
+A='Authorization: dev-static-key-change-me'
+```
+
+| Endpoint | Mô tả (cho app) | curl |
+|---|---|---|
+| `GET /v1/config` | Gọi mỗi lần mở app. Trả `premium`, `pricing_tier`, cờ tính năng, `iap_catalog`+`base_plans` (dựng paywall) và sách free hôm nay. | `curl "$H/v1/config?uid=u1&country=VN" -H "$A"` |
+| `POST /v1/user` | Đăng ký/cập nhật hồ sơ user, idempotent theo `uid`. Gọi ngay sau khi có uid. | `curl -X POST "$H/v1/user" -H "$A" -H 'Content-Type: application/json' -d '{"user_id":"u1","device_region":"VN","operating_system":"android"}'` |
+| `POST /v1/events` | Gửi log sự kiện theo lô cho analytics/funnel. | `curl -X POST "$H/v1/events" -H "$A" -H 'Content-Type: application/json' -d '{"events":[{"event_name":"paywall_view","user_id":"u1"}]}'` |
+| `GET /v1/books` | Danh sách sách, phân trang. Query: `category`, `page`, `limit`. | `curl "$H/v1/books?page=1&limit=20" -H "$A"` |
+| `GET /v1/categories` | Danh sách thể loại (tên, icon, số sách). | `curl "$H/v1/categories" -H "$A"` |
+| `GET /v1/search` | Tìm sách theo tên/tác giả. Query: `q`, `limit`. | `curl "$H/v1/search?q=atomic" -H "$A"` |
+| `GET /v1/books/{id}` | Chi tiết sách + chương. Server khoá chương/audio nếu `premium=false` và không phải sách free hôm nay. Cần `uid`. | `curl "$H/v1/books/b_001?uid=u1" -H "$A"` |
+| `POST /v1/library` | Lưu hoặc bỏ 1 sách khỏi thư viện (`action`: save/remove). | `curl -X POST "$H/v1/library?uid=u1" -H "$A" -H 'Content-Type: application/json' -d '{"book_id":"b_001","action":"save"}'` |
+| `GET /v1/library` | Danh sách sách đã lưu của user. | `curl "$H/v1/library?uid=u1" -H "$A"` |
+| `POST /v1/highlights` | Lưu 1 đoạn highlight, trả về `id`. | `curl -X POST "$H/v1/highlights?uid=u1" -H "$A" -H 'Content-Type: application/json' -d '{"book_id":"b_001","chapter_index":2,"text":"...","color":"yellow"}'` |
+| `GET /v1/highlights` | Danh sách highlight của user. | `curl "$H/v1/highlights?uid=u1" -H "$A"` |
+| `DELETE /v1/highlights/{id}` | Xoá 1 highlight theo id. | `curl -X DELETE "$H/v1/highlights/HID?uid=u1" -H "$A"` |
+| `POST /v1/progress` | Lưu vị trí đọc + cập nhật streak khi mở app. Trả `current_streak`. | `curl -X POST "$H/v1/progress?uid=u1" -H "$A" -H 'Content-Type: application/json' -d '{"book_id":"b_001","chapter_index":2,"position":0.42}'` |
+| `GET /v1/streak` | Chuỗi ngày đọc: `current_streak`, `best_streak`, 7 ngày gần nhất. | `curl "$H/v1/streak?uid=u1" -H "$A"` |
+| `POST /v1/purchase/verify` | Client gọi NGAY sau khi Play trả `purchase_token` → server verify với Google → bật `premium`. | `curl -X POST "$H/v1/purchase/verify" -H "$A" -H 'Content-Type: application/json' -d '{"user_id":"u1","platform":"android","product_id":"yearly_pro","purchase_token":"tok-1"}'` |
+| `POST /v1/purchase/restore` | Màn Settings → "Khôi phục". Gửi các token active, server chọn tier cao nhất còn hiệu lực. | `curl -X POST "$H/v1/purchase/restore" -H "$A" -H 'Content-Type: application/json' -d '{"user_id":"u1","purchases":[{"product_id":"yearly_pro","purchase_token":"tok-1"}]}'` |
+| `POST /webhook/play-billing` | **Google gọi, KHÔNG phải app.** Nguồn sự thật cho renew/cancel/refund. Không cần API key (xác thực bằng Pub/Sub JWT). | `curl -X POST "$H/webhook/play-billing" -H 'Content-Type: application/json' -d '{"message":{"data":"eyJwYWNrYWdlTmFtZSI6ImlvLnRpbmhob2FzYWNoLmFwcCIsInN1YnNjcmlwdGlvbk5vdGlmaWNhdGlvbiI6eyJub3RpZmljYXRpb25UeXBlIjoyLCJwdXJjaGFzZVRva2VuIjoidG9rLTEifX0="}}'` |
+
+**Ghi chú cho app dev:**
+- Header bắt buộc mọi call (trừ webhook): `Authorization: <APP_API_KEY>` (raw key, **không** phải Bearer). Trong curl là biến `$A`.
+- Nhóm per-user (`library`/`highlights`/`progress`/`streak`): truyền `uid` qua `?uid=` **hoặc** header `X-Uid`.
+- `{id}` / `HID`: thay bằng id thật (vd id trả về khi tạo highlight).
+- Webhook curl trên **chỉ chạy ở DEV**: chuỗi `data` là base64 của 1 RTDN `RENEWED` cho `tok-1`. Ở PROD, Google tự gọi và ký JWT — bạn không tự curl.
+- Mọi response bọc envelope `{"status":{"code","message"}, ...}` (xem §9 spec).
 
 ---
 
