@@ -1,0 +1,19 @@
+# ── Core web stack ───────────────────────────────────────────────────
+fastapi>=0.110
+uvicorn[standard]>=0.29
+SQLAlchemy>=2.0
+pydantic>=2.6
+pydantic-settings>=2.2
+python-dotenv>=1.0
+
+# ── Google Play verification (PROD mode only; DEV runs in stub) ───────
+google-api-python-client>=2.100
+google-auth>=2.28
+
+# ── Pub/Sub RTDN OIDC JWT verification ───────────────────────────────
+PyJWT[crypto]>=2.8
+requests>=2.31
+
+# ── Optional drivers (uncomment for production) ──────────────────────
+# psycopg[binary]>=3.1        # Postgres (set DATABASE_URL=postgresql+psycopg://...)
+# firebase-admin>=6.5         # only if you later verify Firebase idToken (v1 does NOT)
