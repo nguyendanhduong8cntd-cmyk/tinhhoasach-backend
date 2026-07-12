@@ -1,0 +1,4186 @@
+{
+ "books": [
+  {
+   "id": "b_001",
+   "title": "Atomic Habits",
+   "author": "James Clear",
+   "cover_url": "https://covers.openlibrary.org/b/id/12539702-L.jpg",
+   "description": "An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+   "category": [
+    "habits",
+    "self-help"
+   ],
+   "insights": [
+    "Tiny 1% improvements compound into remarkable results over time.",
+    "Habits form through a loop of cue, craving, response, and reward.",
+    "Lasting change comes from shifting your identity, not just your outcomes."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Atomic Habits explains how tiny, consistent changes compound into remarkable personal transformation. James Clear presents a practical framework built on cues, cravings, responses, and rewards to build good habits and break bad ones. The book argues that identity change, not willpower, is the real key to lasting habits.",
+     "audio_path": "audio/b_001/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Four Laws of Behavior Change",
+     "text_md": "Clear breaks habit formation into four steps: cue, craving, response, and reward, then offers a law for each — make it obvious, make it attractive, make it easy, make it satisfying. Applying these laws (and their inverses to break bad habits) gives a practical toolkit for redesigning behavior.",
+     "audio_path": "audio/b_001/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Identity-Based Habits",
+     "text_md": "Instead of focusing on outcomes like losing weight, Clear urges readers to focus on becoming the type of person who exhibits the desired trait. Each small habit acts as a vote for the identity you want to build, making change self-reinforcing over time.",
+     "audio_path": "audio/b_001/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_002",
+   "title": "Deep Work",
+   "author": "Cal Newport",
+   "cover_url": "https://covers.openlibrary.org/b/id/7988607-L.jpg",
+   "description": "Rules for Focused Success in a Distracted World",
+   "category": [
+    "productivity",
+    "business"
+   ],
+   "insights": [
+    "The ability to focus without distraction is an increasingly rare and valuable skill.",
+    "Deep, undistracted work produces far more value than shallow, reactive busywork.",
+    "Scheduling deep work blocks and embracing boredom trains your focus like a muscle."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Deep Work argues that the capacity to focus without distraction on cognitively demanding tasks is becoming both rarer and more valuable. Cal Newport contrasts 'deep work' with shallow, distracted busywork, and shows how deep focus produces outsized results. The book offers concrete rules for training and protecting this ability.",
+     "audio_path": "audio/b_002/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Deep Work Hypothesis",
+     "text_md": "Newport contends that as automation and distraction spread, the few who cultivate deep, focused work will thrive while everyone else struggles. He treats focus as a skill that must be deliberately trained, much like a muscle.",
+     "audio_path": "audio/b_002/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Embrace Boredom",
+     "text_md": "Constantly seeking novelty, like checking your phone, erodes your brain's ability to resist distraction. Practicing tolerating boredom and scheduling internet use rebuilds the concentration deep work requires.",
+     "audio_path": "audio/b_002/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_003",
+   "title": "Thinking, Fast and Slow",
+   "author": "Daniel Kahneman",
+   "cover_url": "https://covers.openlibrary.org/b/id/13290711-L.jpg",
+   "description": "How two systems in the mind shape every judgment we make",
+   "category": [
+    "psychology",
+    "science"
+   ],
+   "insights": [
+    "System 1 thinks fast and intuitively; System 2 thinks slow and deliberately.",
+    "Cognitive biases like anchoring and availability quietly distort our judgments.",
+    "Loss aversion makes losses feel roughly twice as painful as equivalent gains feel good."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Thinking, Fast and Slow presents Daniel Kahneman's research on two systems that drive thought: fast, intuitive System 1 and slow, deliberate System 2. The book explores how their interplay produces both efficiency and predictable errors in judgment about risk, memory, and happiness.",
+     "audio_path": "audio/b_003/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "System 1 and System 2",
+     "text_md": "System 1 operates automatically and quickly, while System 2 handles effortful, deliberate reasoning. Because System 2 is lazy and often defers to System 1's quick judgments, many decisions are driven by unconscious intuition rather than careful analysis.",
+     "audio_path": "audio/b_003/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Heuristics, Biases, and Prospect Theory",
+     "text_md": "Kahneman details mental shortcuts like anchoring and availability that mislead us systematically. His prospect theory shows people evaluate outcomes relative to a reference point and feel losses roughly twice as strongly as equivalent gains.",
+     "audio_path": "audio/b_003/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_004",
+   "title": "The Psychology of Money",
+   "author": "Morgan Housel",
+   "cover_url": "https://covers.openlibrary.org/b/id/10389354-L.jpg",
+   "description": "Timeless lessons on wealth, greed, and happiness",
+   "category": [
+    "finance",
+    "psychology"
+   ],
+   "insights": [
+    "Financial success depends more on behavior and temperament than on intelligence.",
+    "Compounding rewards patience; small, consistent gains multiply dramatically over time.",
+    "Building wealth means spending less than you earn, regardless of how much you make."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "The Psychology of Money argues that doing well with money has little to do with intelligence and everything to do with behavior. Morgan Housel uses short stories to show how emotions like fear, greed, and ego shape financial decisions more than formulas do. Patience and humility matter more than raw knowledge.",
+     "audio_path": "audio/b_004/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Compounding and Getting vs. Staying Wealthy",
+     "text_md": "Most of Warren Buffett's fortune was built after age 50, illustrating how compounding rewards time above all else. Housel distinguishes getting money, which requires risk, from keeping money, which requires humility and fear of losing it.",
+     "audio_path": "audio/b_004/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Save Money and Leave Room for Error",
+     "text_md": "Building wealth simply requires a high savings rate, independent of income level. Housel stresses leaving room for error, since unpredictable events can derail even the best financial plans.",
+     "audio_path": "audio/b_004/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_005",
+   "title": "Make Your Bed",
+   "author": "William H. McRaven",
+   "cover_url": "https://covers.openlibrary.org/b/id/7984714-L.jpg",
+   "description": "Small daily disciplines that can change your life",
+   "category": [
+    "leadership",
+    "self-help"
+   ],
+   "insights": [
+    "Starting each day by completing one small task builds momentum for bigger challenges.",
+    "You cannot achieve great things alone; you need others to help carry you through.",
+    "Never quit, even when you fail or face your darkest moments — get back up and try again."
+   ],
+   "duration_min": 12,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Make Your Bed distills ten life lessons from Admiral McRaven's Navy SEAL training into a short, motivational book. Adapted from his viral commencement speech, it argues that small disciplined actions build the character needed to face life's biggest challenges.",
+     "audio_path": "audio/b_005/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Start Your Day with a Task Completed",
+     "text_md": "SEAL instructors required trainees to make their bunk perfectly every morning. That first small accomplishment sets a tone of pride and discipline that carries into the rest of the day, and gives you something to fall back on if the day goes badly.",
+     "audio_path": "audio/b_005/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "You Can't Go It Alone",
+     "text_md": "SEAL trainees had to paddle their rubber boats together as a crew to survive brutal conditions. No one succeeds entirely alone; you need teammates you can trust and who can trust you in return.",
+     "audio_path": "audio/b_005/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_006",
+   "title": "The 7 Habits of Highly Effective People",
+   "author": "Stephen R. Covey",
+   "cover_url": "https://covers.openlibrary.org/b/id/10079937-L.jpg",
+   "description": "Powerful lessons in personal change and effectiveness",
+   "category": [
+    "leadership",
+    "self-help"
+   ],
+   "insights": [
+    "Proactive people focus their energy on what they can control, not what they can't.",
+    "Beginning with the end in mind means defining your personal mission before acting.",
+    "Seeking first to understand others, then to be understood, builds real trust."
+   ],
+   "duration_min": 19,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "The 7 Habits presents Stephen Covey's character-based framework for effectiveness. The habits move from dependence to independence and then to interdependence, grounded in principles rather than quick fixes. True effectiveness starts with changing how we see ourselves and the world.",
+     "audio_path": "audio/b_006/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Private Victory",
+     "text_md": "The first three habits build self-mastery: being proactive means taking responsibility for your responses; beginning with the end in mind means clarifying your values before acting; and putting first things first means prioritizing important, not just urgent, tasks.",
+     "audio_path": "audio/b_006/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Public Victory",
+     "text_md": "Thinking win-win seeks mutually beneficial solutions; seeking first to understand means listening empathetically before advising; and synergizing combines these to create outcomes better than either party could achieve alone.",
+     "audio_path": "audio/b_006/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_007",
+   "title": "The Happiness Project",
+   "author": "Gretchen Rubin",
+   "cover_url": "https://covers.openlibrary.org/b/id/6297223-L.jpg",
+   "description": "One woman's year-long quest to test happiness theories",
+   "category": [
+    "self-help",
+    "mindfulness"
+   ],
+   "insights": [
+    "Lasting happiness grows from small, deliberate changes to everyday habits, not grand overhauls.",
+    "Acting the way you want to feel can actually change how you feel.",
+    "Knowing yourself honestly, not chasing someone else's version of happiness, matters most."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "The Happiness Project chronicles Gretchen Rubin's year-long experiment applying philosophy, science, and pop culture wisdom to boost her everyday happiness. Each month she focused on a different area of life, testing small resolutions. Happiness grows through incremental, personalized changes rather than one big transformation.",
+     "audio_path": "audio/b_007/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Act the Way You Want to Feel",
+     "text_md": "Rubin discovered that behaving with the energy, patience, or enthusiasm you want to have can actually generate that feeling, rather than waiting to feel it first.",
+     "audio_path": "audio/b_007/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Be Gretchen",
+     "text_md": "A key theme was accepting her authentic preferences instead of chasing ideals she thought she should want. Knowing and honoring your true self is essential to sustainable happiness.",
+     "audio_path": "audio/b_007/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_008",
+   "title": "The 4-Hour Workweek",
+   "author": "Timothy Ferriss",
+   "cover_url": "https://covers.openlibrary.org/b/id/539652-L.jpg",
+   "description": "Escape the 9-5, live anywhere, and join the new rich",
+   "category": [
+    "business",
+    "productivity"
+   ],
+   "insights": [
+    "The 80/20 rule reveals that most results come from a small fraction of your efforts.",
+    "Automating and outsourcing routine work frees your time for what matters most.",
+    "Mini-retirements taken throughout life beat deferring all rest until age 65."
+   ],
+   "duration_min": 17,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "The 4-Hour Workweek argues that most people needlessly defer the life they want until retirement, and instead proposes designing a lifestyle of freedom now. Ferriss lays out the DEAL framework — Definition, Elimination, Automation, Liberation — to escape the traditional 9-to-5 grind.",
+     "audio_path": "audio/b_008/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Elimination and the 80/20 Rule",
+     "text_md": "Roughly 80% of results come from just 20% of efforts, so ruthlessly cutting low-value tasks and interruptions frees enormous time. Ferriss encourages a strict 'low-information diet.'",
+     "audio_path": "audio/b_008/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Automation and Mini-Retirements",
+     "text_md": "Ferriss describes building automated or outsourced income streams so income no longer requires trading time directly for money, letting people take 'mini-retirements' throughout life.",
+     "audio_path": "audio/b_008/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_009",
+   "title": "Sapiens",
+   "author": "Yuval Noah Harari",
+   "cover_url": "https://covers.openlibrary.org/b/id/8634250-L.jpg",
+   "description": "A brief history of humankind, from apes to empires",
+   "category": [
+    "science",
+    "philosophy"
+   ],
+   "insights": [
+    "The Cognitive Revolution let humans cooperate at scale by believing shared myths.",
+    "The Agricultural Revolution boosted food supply but often worsened daily human life.",
+    "Money, empires, and religions are shared fictions that enabled global cooperation."
+   ],
+   "duration_min": 20,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Sapiens traces the history of Homo sapiens from an unremarkable ape to the dominant force reshaping the planet. Harari organizes this around three revolutions: cognitive, agricultural, and scientific. Shared fictions like money, nations, and religions are what allow humans to cooperate in the millions.",
+     "audio_path": "audio/b_009/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Cognitive Revolution",
+     "text_md": "Around 70,000 years ago a mutation gave Sapiens the ability to communicate about things that don't exist, like myths and nations. This capacity for shared fiction allowed unprecedented cooperation among strangers.",
+     "audio_path": "audio/b_009/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Agricultural Revolution",
+     "text_md": "Harari calls the shift to farming 'history's biggest fraud,' arguing it increased food supply and population but often left individuals working harder for a worse diet and more disease than their forager ancestors.",
+     "audio_path": "audio/b_009/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_010",
+   "title": "The Power of Now",
+   "author": "Eckhart Tolle",
+   "cover_url": "https://covers.openlibrary.org/b/id/2401616-L.jpg",
+   "description": "A guide to spiritual enlightenment through presence",
+   "category": [
+    "mindfulness",
+    "philosophy"
+   ],
+   "insights": [
+    "The present moment is the only time we ever actually have or can act within.",
+    "Identifying with your mind's constant thinking is the root of psychological suffering.",
+    "Presence, full attention to now, dissolves the ego and the pain-body's grip."
+   ],
+   "duration_min": 13,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "The Power of Now presents Eckhart Tolle's teaching that psychological suffering comes from over-identifying with the mind's constant stream of thought about past and future. True peace and awakening are found only by fully inhabiting the present moment.",
+     "audio_path": "audio/b_010/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "You Are Not Your Mind",
+     "text_md": "Most people mistake the voice in their head for who they truly are. Recognizing yourself as the awareness behind your thoughts is the first step toward freedom from compulsive thinking.",
+     "audio_path": "audio/b_010/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Pain-Body",
+     "text_md": "The 'pain-body' is an accumulated reservoir of old emotional pain that periodically takes over a person's reactions. Bringing conscious presence to it, rather than being controlled by it, allows it to dissolve.",
+     "audio_path": "audio/b_010/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_011",
+   "title": "Good to Great",
+   "author": "Jim Collins",
+   "cover_url": "https://covers.openlibrary.org/b/id/7431270-L.jpg",
+   "description": "Why Some Companies Make the Leap and Others Don't",
+   "category": [
+    "business",
+    "leadership"
+   ],
+   "insights": [
+    "Level 5 leaders combine deep personal humility with intense professional will.",
+    "The Hedgehog Concept aligns what you're passionate about, best at, and paid for.",
+    "Disciplined people, thought, and action build sustainable greatness, not luck."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Jim Collins studied why some companies transition from good to great, sustained results while comparable companies fail. Drawing on 11 companies that made the leap, the book identifies key factors like leadership, people, and strategy that separate great companies from merely good ones.",
+     "audio_path": "audio/b_011/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Level 5 Leadership",
+     "text_md": "Companies making the leap were led by executives who blend extreme personal humility with unwavering professional resolve. They credit others for success while taking responsibility for failures.",
+     "audio_path": "audio/b_011/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Hedgehog Concept",
+     "text_md": "Great companies find the intersection of three circles: what they can be best in the world at, what drives their economic engine, and what they're deeply passionate about. This clarity guides disciplined decisions over decades.",
+     "audio_path": "audio/b_011/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_012",
+   "title": "10% Happier",
+   "author": "Dan Harris",
+   "cover_url": "https://covers.openlibrary.org/b/id/7277740-L.jpg",
+   "description": "A skeptic's road to self-improvement through meditation",
+   "category": [
+    "mindfulness",
+    "self-help"
+   ],
+   "insights": [
+    "Meditation isn't mystical, it's a practical, evidence-based mental workout.",
+    "The inner voice of self-criticism and ego can be observed and tamed, not obeyed.",
+    "Small, consistent mindfulness practice yields real, measurable reductions in stress."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "ABC News anchor Dan Harris recounts having an on-air panic attack that led him to investigate meditation as a skeptical journalist. He discovers mindfulness offers real, science-backed benefits without New Age beliefs, making him roughly 10% happier.",
+     "audio_path": "audio/b_012/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Taming the Voice in Your Head",
+     "text_md": "Harris describes the mind's constant inner narration that drives anxiety, ego, and unhappiness. Meditation helps create distance from this voice so it no longer runs the show unchecked.",
+     "audio_path": "audio/b_012/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Science of Mindfulness",
+     "text_md": "Harris interviews neuroscientists showing meditation physically changes the brain, reducing reactivity in the amygdala and strengthening focus — a practical tool, not just a spiritual practice.",
+     "audio_path": "audio/b_012/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_013",
+   "title": "Think and Grow Rich",
+   "author": "Napoleon Hill",
+   "cover_url": "https://covers.openlibrary.org/b/id/14542536-L.jpg",
+   "description": "The 13 principles that turn desire into wealth",
+   "category": [
+    "finance",
+    "self-help"
+   ],
+   "insights": [
+    "Burning desire combined with a definite goal is the starting point of all achievement.",
+    "A Mastermind group of aligned minds accelerates success beyond individual effort.",
+    "Persistence in the face of temporary defeat separates winners from quitters."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Napoleon Hill distills interviews with over 500 successful individuals into thirteen principles for achieving wealth. Success begins as a definite, burning desire in the mind before it manifests as physical reality.",
+     "audio_path": "audio/b_013/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Desire and Definiteness of Purpose",
+     "text_md": "Vague wishes never produce results; only a clearly defined goal backed by intense desire and a written plan can be transmuted into riches.",
+     "audio_path": "audio/b_013/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Mastermind Principle",
+     "text_md": "Aligning with a group of like-minded, complementary individuals in harmony creates a collective intelligence greater than any single mind — essential infrastructure for major achievement.",
+     "audio_path": "audio/b_013/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_014",
+   "title": "The Alchemist",
+   "author": "Paulo Coelho",
+   "cover_url": "https://covers.openlibrary.org/b/id/11556106-L.jpg",
+   "description": "A shepherd's journey to discover his Personal Legend",
+   "category": [
+    "philosophy",
+    "self-help"
+   ],
+   "insights": [
+    "Pursuing your Personal Legend is the truest path to a fulfilling life.",
+    "The universe conspires to help those committed to their dreams.",
+    "Wisdom and treasure are often found through the journey, not just the destination."
+   ],
+   "duration_min": 13,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Paulo Coelho's novel follows Santiago, an Andalusian shepherd who travels to the Egyptian pyramids after a recurring dream about treasure. Along the way he learns to listen to his heart, read omens, and understand that the journey itself teaches him what he needs to know.",
+     "audio_path": "audio/b_014/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Personal Legend",
+     "text_md": "Everyone has a 'Personal Legend,' a unique purpose they are meant to fulfill. Pursuing this purpose, despite fear and setbacks, is what gives life meaning.",
+     "audio_path": "audio/b_014/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Listening to Omens",
+     "text_md": "Santiago is taught to read signs from the 'Soul of the World' that guide his path, suggesting nature actively supports those pursuing their true calling.",
+     "audio_path": "audio/b_014/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_015",
+   "title": "12 Rules for Life",
+   "author": "Jordan B. Peterson",
+   "cover_url": "https://covers.openlibrary.org/b/id/8131760-L.jpg",
+   "description": "An Antidote to Chaos",
+   "category": [
+    "self-help",
+    "philosophy"
+   ],
+   "insights": [
+    "Taking personal responsibility for your life is the antidote to chaos and suffering.",
+    "Comparing yourself to who you were yesterday matters more than comparing to others.",
+    "Pursuing what is meaningful, not merely expedient, builds a resilient character."
+   ],
+   "duration_min": 19,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Jordan Peterson combines psychology, mythology, and philosophy to offer twelve principles for living a disciplined, meaningful life amid suffering and disorder. The rules are grounded in the idea that order and chaos must be balanced.",
+     "audio_path": "audio/b_015/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Stand Up Straight with Your Shoulders Back",
+     "text_md": "Peterson uses lobster hierarchy as a metaphor for confidence and status, arguing physical posture reflects and shapes psychological readiness to face life's challenges.",
+     "audio_path": "audio/b_015/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Compare Yourself to Who You Were Yesterday",
+     "text_md": "Rather than measuring against others, set personal, incremental goals and track improvement against your own past. This reduces resentment and builds sustainable growth.",
+     "audio_path": "audio/b_015/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_016",
+   "title": "Mindset",
+   "author": "Carol S. Dweck",
+   "cover_url": "https://covers.openlibrary.org/b/id/746414-L.jpg",
+   "description": "The New Psychology of Success",
+   "category": [
+    "psychology",
+    "self-help"
+   ],
+   "insights": [
+    "A fixed mindset sees abilities as static; a growth mindset sees them as developable.",
+    "Praising effort and process fosters resilience better than praising innate talent.",
+    "Embracing challenges and failure as learning opportunities drives long-term success."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Stanford psychologist Carol Dweck shows that people's beliefs about their own abilities — whether fixed or capable of growth — shape their achievement, relationships, and resilience. Adopting a growth mindset transforms outcomes in school, sports, and business.",
+     "audio_path": "audio/b_016/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Fixed vs. Growth Mindset",
+     "text_md": "A fixed mindset assumes intelligence is innate and unchangeable, leading people to avoid challenges. A growth mindset assumes abilities can be developed through effort, leading to greater resilience.",
+     "audio_path": "audio/b_016/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Power of 'Yet'",
+     "text_md": "Simple language shifts, like adding 'yet' to a statement of failure, reframe setbacks as part of an ongoing learning process, meaningfully changing motivation and persistence.",
+     "audio_path": "audio/b_016/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_017",
+   "title": "Rich Dad Poor Dad",
+   "author": "Robert T. Kiyosaki",
+   "cover_url": "https://covers.openlibrary.org/b/id/8315603-L.jpg",
+   "description": "What the rich teach their kids about money",
+   "category": [
+    "finance"
+   ],
+   "insights": [
+    "Assets put money in your pocket; liabilities take money out, know the difference.",
+    "The rich acquire assets while the poor and middle class acquire liabilities.",
+    "Financial education and literacy matter more than a high salary alone."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Robert Kiyosaki contrasts the financial philosophies of his 'poor dad' and his 'rich dad.' Through their differing advice, he lays out core principles of financial literacy, asset building, and thinking like an investor rather than an employee.",
+     "audio_path": "audio/b_017/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Assets vs. Liabilities",
+     "text_md": "Assets generate income while liabilities generate expenses, and many people misclassify liabilities like their home as assets. Building a portfolio of true assets is the real path to financial freedom.",
+     "audio_path": "audio/b_017/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Mind Your Own Business",
+     "text_md": "Kiyosaki urges readers to build income-generating assets on the side rather than relying solely on a job, shifting focus from working for money to having money work for you.",
+     "audio_path": "audio/b_017/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_018",
+   "title": "How to Win Friends and Influence People",
+   "author": "Dale Carnegie",
+   "cover_url": "https://covers.openlibrary.org/b/id/13314878-L.jpg",
+   "description": "The classic guide to mastering interpersonal skills",
+   "category": [
+    "communication",
+    "self-help"
+   ],
+   "insights": [
+    "Genuine interest in other people wins more friends than trying to be interesting.",
+    "Avoid criticizing, condemning, or complaining, people rarely respond well to blame.",
+    "Making others feel important and appreciated is the key to lasting influence."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Dale Carnegie's classic distills timeless principles for building relationships, handling people diplomatically, and becoming more persuasive. It remains a foundational text on interpersonal and communication skills.",
+     "audio_path": "audio/b_018/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Fundamental Techniques in Handling People",
+     "text_md": "Carnegie advises against criticizing others, recommending genuine appreciation instead. Arousing an eager want in others, rather than demanding, is the most effective way to influence behavior.",
+     "audio_path": "audio/b_018/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Six Ways to Make People Like You",
+     "text_md": "Smile, remember names, be a good listener, and talk in terms of the other person's interests. These small behaviors build trust far more effectively than self-promotion.",
+     "audio_path": "audio/b_018/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_019",
+   "title": "Start With Why",
+   "author": "Simon Sinek",
+   "cover_url": "https://covers.openlibrary.org/b/id/6395237-L.jpg",
+   "description": "How Great Leaders Inspire Everyone to Take Action",
+   "category": [
+    "leadership",
+    "business"
+   ],
+   "insights": [
+    "People don't buy what you do, they buy why you do it.",
+    "The Golden Circle, Why, How, What, explains how inspiring leaders communicate.",
+    "Clarity of purpose creates loyalty from customers and employees alike."
+   ],
+   "duration_min": 13,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Simon Sinek argues that the most inspiring leaders and organizations communicate starting from their core purpose or 'why' rather than what they do. This 'Golden Circle' framework explains why some inspire greater loyalty and innovation than others.",
+     "audio_path": "audio/b_019/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Golden Circle",
+     "text_md": "Most organizations communicate from the outside in, starting with what they do. Inspiring ones reverse this, starting with why, which resonates with the limbic brain and drives decision-making and loyalty.",
+     "audio_path": "audio/b_019/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Law of Diffusion of Innovation",
+     "text_md": "Reaching innovators and early adopters who believe in your why is essential before the majority will follow. A clear why helps cross the chasm to mass adoption.",
+     "audio_path": "audio/b_019/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_020",
+   "title": "The Subtle Art of Not Giving a F*ck",
+   "author": "Mark Manson",
+   "cover_url": "https://covers.openlibrary.org/b/id/8231990-L.jpg",
+   "description": "A Counterintuitive Approach to Living a Good Life",
+   "category": [
+    "self-help",
+    "psychology"
+   ],
+   "insights": [
+    "Not giving a f*ck means choosing your struggles wisely, not avoiding all struggle.",
+    "Constant positivity is a form of avoidance; embracing negative emotions builds resilience.",
+    "You are always choosing your values, even by default, so choose them deliberately."
+   ],
+   "duration_min": 12,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Mark Manson argues against relentless positivity, contending that a good life comes from caring about fewer, better things and accepting pain as inevitable. He challenges readers to choose their struggles deliberately rather than chasing constant happiness.",
+     "audio_path": "audio/b_020/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Subtle Art",
+     "text_md": "Everyone has a finite amount of 'f*cks' to give; spreading them across too many things leads to anxiety. Real freedom comes from consciously narrowing your cares to what truly matters.",
+     "audio_path": "audio/b_020/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Choosing Your Values",
+     "text_md": "Suffering is inevitable, so the real question is what problems you want and what values guide how you handle them. Good values are reality-based and within your control.",
+     "audio_path": "audio/b_020/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_021",
+   "title": "Grit",
+   "author": "Angela Duckworth",
+   "cover_url": "https://covers.openlibrary.org/b/id/7438753-L.jpg",
+   "description": "Why passion and perseverance matter more than talent",
+   "category": [
+    "psychology",
+    "self-help"
+   ],
+   "insights": [
+    "Grit—passion plus sustained perseverance—predicts achievement better than raw talent.",
+    "Talent x effort = skill, and skill x effort = achievement—effort counts twice.",
+    "Grit can be cultivated through interest, deliberate practice, purpose, and hope."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Psychologist Angela Duckworth argues that grit — a combination of passion and long-term perseverance — is a better predictor of success than talent or IQ. Drawing on research across West Point cadets and top performers, she shows achievement follows a two-part formula.",
+     "audio_path": "audio/b_021/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Effort Counts Twice",
+     "text_md": "Talent multiplied by effort produces skill, and skill multiplied by effort produces achievement. Sustained effort matters more than natural ability in determining long-term success.",
+     "audio_path": "audio/b_021/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Growing Grit from the Inside Out",
+     "text_md": "Gritty people cultivate four assets: genuine interest, disciplined practice, a sense of purpose, and hope that effort can improve their future. These can be intentionally developed.",
+     "audio_path": "audio/b_021/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_022",
+   "title": "Outliers",
+   "author": "Malcolm Gladwell",
+   "cover_url": "https://covers.openlibrary.org/b/id/10021591-L.jpg",
+   "description": "What really separates high achievers from everyone else",
+   "category": [
+    "psychology",
+    "science"
+   ],
+   "insights": [
+    "Extraordinary success comes from hidden advantages, timing, and opportunity, not just merit.",
+    "Mastery typically requires around 10,000 hours of deliberate practice.",
+    "Cultural legacy and circumstances of birth shape who gets the chance to succeed."
+   ],
+   "duration_min": 17,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Malcolm Gladwell examines why some people become wildly successful, arguing that outliers are products of hidden advantages, timing, and cultural background rather than talent alone. The book challenges the myth of the self-made success story.",
+     "audio_path": "audio/b_022/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The 10,000-Hour Rule",
+     "text_md": "Roughly 10,000 hours of practice are needed to achieve world-class expertise. Figures like The Beatles and Bill Gates had unusual early access to practice opportunities most people never get.",
+     "audio_path": "audio/b_022/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Matthew Effect",
+     "text_md": "Small early advantages compound over time. Gladwell illustrates this with youth hockey players born early in the year, who get picked for elite teams and better coaching.",
+     "audio_path": "audio/b_022/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_023",
+   "title": "The Lean Startup",
+   "author": "Eric Ries",
+   "cover_url": "https://covers.openlibrary.org/b/id/7104760-L.jpg",
+   "description": "How startups use rapid experiments to build what customers want",
+   "category": [
+    "business",
+    "productivity"
+   ],
+   "insights": [
+    "Startups should treat their business plan as a set of untested hypotheses.",
+    "The Build-Measure-Learn loop turns ideas into validated learning fast.",
+    "A minimum viable product lets you test assumptions before scaling."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Eric Ries presents a scientific approach to building startups by rapidly testing ideas with real customers instead of executing long, unproven plans. He introduces the Build-Measure-Learn feedback loop and validated learning to reduce waste.",
+     "audio_path": "audio/b_023/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Build-Measure-Learn",
+     "text_md": "Startups should move through this loop as fast as possible, building a minimum product, measuring how customers respond, and learning whether to pivot or persevere.",
+     "audio_path": "audio/b_023/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Validated Learning",
+     "text_md": "Rather than trusting vanity metrics like total signups, lean startups measure progress through validated learning — rigorous, data-backed proof that customers want what's being built.",
+     "audio_path": "audio/b_023/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_024",
+   "title": "Zero to One",
+   "author": "Peter Thiel",
+   "cover_url": "https://covers.openlibrary.org/b/id/9002334-L.jpg",
+   "description": "Notes on startups and how to build the future",
+   "category": [
+    "business",
+    "finance"
+   ],
+   "insights": [
+    "True progress means creating something new (0 to 1), not copying what works (1 to n).",
+    "Competition destroys value; building a monopoly through unique advantage creates it.",
+    "Great companies are built on secrets and a definite view of the future."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Peter Thiel argues that real innovation comes from creating something entirely new — going from zero to one — rather than copying existing ideas. Drawing on founding PayPal, he explains why monopolies, not competition, drive progress.",
+     "audio_path": "audio/b_024/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Monopoly vs. Competition",
+     "text_md": "Competition erodes profits and value, while building a monopoly through a unique technological edge lets a company shape a market. Founders should dominate a small niche before expanding.",
+     "audio_path": "audio/b_024/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Secrets and Definite Optimism",
+     "text_md": "Great companies are built on secrets — important truths few people have discovered. Thiel encourages founders to have a definite, confident plan for the future.",
+     "audio_path": "audio/b_024/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_025",
+   "title": "The Power of Habit",
+   "author": "Charles Duhigg",
+   "cover_url": "https://covers.openlibrary.org/b/id/9078085-L.jpg",
+   "description": "Why habits form and how to change them",
+   "category": [
+    "psychology",
+    "habits"
+   ],
+   "insights": [
+    "Every habit follows a loop: cue, routine, and reward.",
+    "Keystone habits trigger a chain reaction that reshapes other behaviors.",
+    "You can change a habit by keeping the same cue and reward but swapping the routine."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Charles Duhigg explores the science of habit formation, showing how habits operate through a neurological loop of cue, routine, and reward. He explains how individuals and companies can deliberately change destructive habits and build better ones.",
+     "audio_path": "audio/b_025/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Habit Loop",
+     "text_md": "Every habit consists of a cue that triggers a routine, which delivers a reward, reinforcing the loop until it becomes automatic. Understanding this structure is the first step toward change.",
+     "audio_path": "audio/b_025/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Keystone Habits",
+     "text_md": "Certain habits, like regular exercise, trigger a chain reaction that improves other unrelated areas of life. Identifying and changing keystone habits can create widespread positive change.",
+     "audio_path": "audio/b_025/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_026",
+   "title": "Man's Search for Meaning",
+   "author": "Viktor E. Frankl",
+   "cover_url": "https://covers.openlibrary.org/b/id/11203708-L.jpg",
+   "description": "Finding purpose and hope amid the horror of the Holocaust",
+   "category": [
+    "psychology",
+    "philosophy"
+   ],
+   "insights": [
+    "Even in the worst suffering, humans can find meaning and hope.",
+    "The last of the human freedoms is choosing one's attitude in any circumstance.",
+    "Logotherapy holds that meaning can be found through work, love, or suffering."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.9,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Viktor Frankl, a psychiatrist and Holocaust survivor, recounts his experiences in Nazi concentration camps and the insights he drew from them. Even in extreme suffering, people can find meaning, the foundation of his therapy, logotherapy.",
+     "audio_path": "audio/b_026/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Life in the Concentration Camps",
+     "text_md": "Frankl describes the psychological stages prisoners went through and observes that those who survived best often held onto a sense of meaning or purpose, not necessarily the physically strongest.",
+     "audio_path": "audio/b_026/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Logotherapy: The Will to Meaning",
+     "text_md": "The primary human drive is not pleasure but the search for meaning, found through purposeful work, love, or the courageous way one faces unavoidable suffering.",
+     "audio_path": "audio/b_026/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_027",
+   "title": "The 5 AM Club",
+   "author": "Robin Sharma",
+   "cover_url": "https://covers.openlibrary.org/b/id/10326643-L.jpg",
+   "description": "Own your morning to elevate your life",
+   "category": [
+    "productivity",
+    "self-help"
+   ],
+   "insights": [
+    "Waking at 5am gives you uninterrupted time to grow before the world wakes up.",
+    "The 20/20/20 formula splits the first hour into movement, reflection, and learning.",
+    "Owning your morning is the key to elevating every part of your life."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Robin Sharma delivers his ideas through a story about a struggling entrepreneur and artist mentored by a billionaire in the practice of waking at 5am. Owning the early morning hours is the key lever for personal transformation.",
+     "audio_path": "audio/b_027/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The 20/20/20 Formula",
+     "text_md": "Divide the first hour after waking at 5am into three 20-minute blocks: vigorous exercise, reflection through journaling, and learning through reading. This primes mind and body for peak performance.",
+     "audio_path": "audio/b_027/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Own Your Morning, Elevate Your Life",
+     "text_md": "How you spend the first hour of your day sets the tone for everything that follows. Protecting that time gives you a compounding advantage in focus and discipline.",
+     "audio_path": "audio/b_027/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_028",
+   "title": "Ikigai",
+   "author": "Héctor García and Francesc Miralles",
+   "cover_url": "https://covers.openlibrary.org/b/id/11300391-L.jpg",
+   "description": "The Japanese secret to a long and happy life",
+   "category": [
+    "mindfulness",
+    "philosophy"
+   ],
+   "insights": [
+    "Ikigai lies at the intersection of what you love, are good at, the world needs, and you can be paid for.",
+    "Okinawan centenarians thrive on purpose, light movement, and strong community bonds.",
+    "Staying active and connected, not retiring from purpose, supports a long life."
+   ],
+   "duration_min": 13,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "García and Miralles explore the Japanese concept of ikigai — one's reason for being — through interviews with elderly residents of Okinawa, a 'blue zone' for longevity. The book blends philosophy with lessons on diet, movement, and community.",
+     "audio_path": "audio/b_028/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Finding Your Ikigai",
+     "text_md": "Ikigai sits at the intersection of what you love, what you're good at, what the world needs, and what you can be paid for. Identifying this gives life direction and daily motivation.",
+     "audio_path": "audio/b_028/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Lessons from the Longest-Lived",
+     "text_md": "Okinawan centenarians stay active past retirement, eat until only 80% full (hara hachi bu), and maintain close social circles called moai — all linked to longevity.",
+     "audio_path": "audio/b_028/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_029",
+   "title": "The Miracle Morning",
+   "author": "Hal Elrod",
+   "cover_url": "https://covers.openlibrary.org/b/id/8539416-L.jpg",
+   "description": "A simple morning routine to transform your life",
+   "category": [
+    "productivity",
+    "habits"
+   ],
+   "insights": [
+    "The Life S.A.V.E.R.S. routine—Silence, Affirmations, Visualization, Exercise, Reading, and Scribing—transforms mornings.",
+    "How you start your morning determines how you live your day.",
+    "A simple wake-up strategy can beat the urge to snooze and reclaim lost time."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Hal Elrod presents a personal development system built around waking early and dedicating the first hour to self-improvement. Following his recovery from a near-fatal accident, he designed the Life S.A.V.E.R.S. routine to transform mindset and habits.",
+     "audio_path": "audio/b_029/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Life S.A.V.E.R.S.",
+     "text_md": "The routine consists of six practices — Silence, Affirmations, Visualization, Exercise, Reading, and Scribing — performed each morning to build clarity, motivation, and discipline.",
+     "audio_path": "audio/b_029/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Snooze-Proof Wake-Up",
+     "text_md": "Elrod offers a five-step method for getting out of bed immediately, including setting a clear intention the night before and moving your alarm out of reach.",
+     "audio_path": "audio/b_029/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_030",
+   "title": "Can't Hurt Me",
+   "author": "David Goggins",
+   "cover_url": "https://covers.openlibrary.org/b/id/8305903-L.jpg",
+   "description": "A Navy SEAL's guide to mastering your mind",
+   "category": [
+    "self-help",
+    "biography"
+   ],
+   "insights": [
+    "When your mind says you're done, you're actually only 40% through your true capacity.",
+    "Callusing your mind through voluntary hardship builds unbreakable mental toughness.",
+    "The Accountability Mirror forces you to confront excuses and own your growth."
+   ],
+   "duration_min": 17,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Former Navy SEAL David Goggins shares his journey from an abused, overweight childhood to becoming one of the world's toughest endurance athletes. The memoir blends brutal storytelling with a philosophy of mental toughness built through voluntary suffering.",
+     "audio_path": "audio/b_030/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The 40% Rule",
+     "text_md": "When the mind and body feel completely exhausted, a person has typically only used about 40% of their actual capacity. Pushing past that limit is how resilience is built.",
+     "audio_path": "audio/b_030/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Accountability Mirror",
+     "text_md": "Goggins wrote his weaknesses and goals on sticky notes and confronted them daily in the mirror, forcing brutal self-honesty to stop making excuses.",
+     "audio_path": "audio/b_030/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_031",
+   "title": "Ego Is the Enemy",
+   "author": "Ryan Holiday",
+   "cover_url": "https://covers.openlibrary.org/b/id/12447129-L.jpg",
+   "description": "How ego sabotages ambition, success, and resilience",
+   "category": [
+    "self-help",
+    "philosophy"
+   ],
+   "insights": [
+    "Ego blocks learning by convincing us we already know enough.",
+    "Staying humble in success prevents complacency and self-destruction.",
+    "Quiet, disciplined work outperforms self-promotion and image-building."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Ryan Holiday argues that ego — an inflated sense of self-importance — is the hidden force that derails careers and character. Structured around aspiring, achieving success, and coping with failure, the message is that humility and hard work beat vanity every time.",
+     "audio_path": "audio/b_031/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Aspire: Be a Student, Not a Genius",
+     "text_md": "In pursuit of a goal, ego shows up as the need to talk big and skip the boring apprenticeship. Holiday urges suppressing the urge for validation and mastering the craft quietly.",
+     "audio_path": "audio/b_031/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Success: Guard Against Entitlement",
+     "text_md": "Once you achieve success, ego convinces you that you deserve special treatment and can stop growing. This is when discipline and self-awareness matter most.",
+     "audio_path": "audio/b_031/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_032",
+   "title": "The Obstacle Is the Way",
+   "author": "Ryan Holiday",
+   "cover_url": "https://covers.openlibrary.org/b/id/14428233-L.jpg",
+   "description": "Turning trials into triumph through Stoic philosophy",
+   "category": [
+    "philosophy",
+    "self-help"
+   ],
+   "insights": [
+    "How you perceive a setback determines whether it limits or empowers you.",
+    "Deliberate, persistent action turns obstacles into opportunities.",
+    "A resilient will accepts what can't be changed and endures accordingly."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Ryan Holiday distills Stoic philosophy into a practical guide for turning adversity into advantage, built around the maxim that 'the impediment to action advances action.' The book is organized into three disciplines: Perception, Action, and Will.",
+     "audio_path": "audio/b_032/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Perception: See Things As They Are",
+     "text_md": "Our emotional reactions, not the obstacles themselves, usually cause the most damage. Viewing a situation calmly and objectively frees us to find the opportunity hidden within difficulty.",
+     "audio_path": "audio/b_032/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Action: Move Forward, Deliberately",
+     "text_md": "Once perception is clear, Holiday insists on persistent, energetic action rather than waiting for ideal conditions. Small iterative steps build momentum and reveal a path around the obstacle.",
+     "audio_path": "audio/b_032/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_033",
+   "title": "Daring Greatly",
+   "author": "Brené Brown",
+   "cover_url": "https://covers.openlibrary.org/b/id/7367250-L.jpg",
+   "description": "How the courage to be vulnerable transforms how we live and lead",
+   "category": [
+    "psychology",
+    "self-help"
+   ],
+   "insights": [
+    "Vulnerability is not weakness -- it's the birthplace of courage and connection.",
+    "Shame loses power when it's named and spoken aloud instead of hidden.",
+    "Wholehearted living means embracing imperfection instead of chasing 'never enough'."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Brené Brown draws on years of research into shame and vulnerability to argue that the willingness to be seen and emotionally exposed — not perfection — fuels genuine courage, creativity, and connection. She names our culture of scarcity as the main obstacle to living wholeheartedly.",
+     "audio_path": "audio/b_033/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Myth of Vulnerability as Weakness",
+     "text_md": "Brown challenges the belief that vulnerability equals weakness, showing it's actually the source of love, belonging, and innovation. Avoiding it to feel safe leaves people disconnected.",
+     "audio_path": "audio/b_033/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Shame Resilience",
+     "text_md": "Shame thrives in secrecy and silence; speaking it aloud to someone who responds with empathy dramatically reduces its power, allowing people to show up authentically.",
+     "audio_path": "audio/b_033/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_034",
+   "title": "Quiet",
+   "author": "Susan Cain",
+   "cover_url": "https://covers.openlibrary.org/b/id/7079753-L.jpg",
+   "description": "The power of introverts in a world that can't stop talking",
+   "category": [
+    "psychology",
+    "self-help"
+   ],
+   "insights": [
+    "Introverts and extroverts differ in how much stimulation they need to feel comfortable.",
+    "Western culture's 'Extrovert Ideal' undervalues quiet, reflective strengths.",
+    "Introverts can act extroverted for causes they care about, but need solitude to recharge."
+   ],
+   "duration_min": 17,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Susan Cain makes the case that modern Western society overvalues extroversion and stigmatizes introversion, even though a third to a half of people are introverts. Introverts bring deep focus, creativity, and thoughtful leadership the 'Extrovert Ideal' overlooks.",
+     "audio_path": "audio/b_034/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Extrovert Ideal",
+     "text_md": "America shifted from a 'Culture of Character' to a 'Culture of Personality,' prizing charisma over depth. This bias shows up in open-plan offices and group brainstorming that suppress introverts' best thinking.",
+     "audio_path": "audio/b_034/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Free Trait Theory",
+     "text_md": "Introverts can act out of character to pursue 'core personal projects' they care about, but doing so is draining, so they need recovery time and quiet 'restorative niches.'",
+     "audio_path": "audio/b_034/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_035",
+   "title": "Drive",
+   "author": "Daniel H. Pink",
+   "cover_url": "https://covers.openlibrary.org/b/id/6404786-L.jpg",
+   "description": "The surprising truth about what really motivates us",
+   "category": [
+    "psychology",
+    "business"
+   ],
+   "insights": [
+    "Carrot-and-stick rewards can backfire and kill motivation for creative work.",
+    "Autonomy, mastery, and purpose are the real drivers of engagement.",
+    "Intrinsically motivated behavior beats extrinsically driven behavior over time."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Daniel Pink argues that the traditional 'carrot and stick' model of motivation is outdated for complex, creative work. He proposes a new model built on autonomy, mastery, and purpose, combining behavioral science with practical suggestions.",
+     "audio_path": "audio/b_035/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Autonomy",
+     "text_md": "People are more engaged and creative when they have control over their task, time, technique, and team. Experiments like Google's '20% time' show how autonomy drives innovation.",
+     "audio_path": "audio/b_035/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Mastery",
+     "text_md": "Mastery is a mindset — pursuing improvement in something that matters — and is often asymptotic. Flow, being fully absorbed in a challenge matched to skill, sustains the pursuit.",
+     "audio_path": "audio/b_035/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_036",
+   "title": "Essentialism",
+   "author": "Greg McKeown",
+   "cover_url": "https://covers.openlibrary.org/b/id/7285986-L.jpg",
+   "description": "The disciplined pursuit of less, but better",
+   "category": [
+    "productivity",
+    "self-help"
+   ],
+   "insights": [
+    "Essentialists deliberately separate the vital few priorities from the trivial many.",
+    "Saying no to non-essential demands protects time and energy for what matters most.",
+    "Small, consistent routines make essential work nearly effortless to sustain."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Greg McKeown argues that in a world of endless options, the disciplined pursuit of less — doing only what is truly essential — leads to greater impact than trying to do it all. Explore broadly, eliminate the nonessential, then execute with minimal friction.",
+     "audio_path": "audio/b_036/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Discipline to Say No",
+     "text_md": "Essentialism starts with recognizing that we always have a choice in how we spend time and energy. Saying a graceful but firm 'no' to good-but-nonessential opportunities protects space for the truly vital.",
+     "audio_path": "audio/b_036/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Execute: Buffer and Routine",
+     "text_md": "Build in buffers for the unexpected and turn essential activities into routines so they require less willpower. Small, consistent progress compounds into significant results.",
+     "audio_path": "audio/b_036/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_037",
+   "title": "The Compound Effect",
+   "author": "Darren Hardy",
+   "cover_url": "https://covers.openlibrary.org/b/id/7115046-L.jpg",
+   "description": "Small smart choices compounded into massive success",
+   "category": [
+    "productivity",
+    "habits"
+   ],
+   "insights": [
+    "Small, consistent daily choices compound into massive results over time.",
+    "Tracking your behaviors builds the awareness needed to change them.",
+    "Momentum from good habits makes sustained success far easier than willpower alone."
+   ],
+   "duration_min": 13,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Darren Hardy explains the Compound Effect: small, seemingly insignificant choices repeated consistently produce dramatic results — for better or worse. Rather than overnight success, the book emphasizes patience, tracking, and consistency.",
+     "audio_path": "audio/b_037/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Choices Drive Habits",
+     "text_md": "Success traces back to a chain reaction: a choice shapes a behavior, repeated behavior becomes a habit, and habits determine outcomes. Take full ownership of your choices.",
+     "audio_path": "audio/b_037/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Momentum: The Big Mo",
+     "text_md": "Building success is like accelerating a heavy flywheel: hardest at the start, but consistent effort builds momentum that eventually carries you forward with less resistance.",
+     "audio_path": "audio/b_037/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_038",
+   "title": "Emotional Intelligence",
+   "author": "Daniel Goleman",
+   "cover_url": "https://covers.openlibrary.org/b/id/1359485-L.jpg",
+   "description": "Why emotional intelligence can matter more than IQ",
+   "category": [
+    "psychology",
+    "self-help"
+   ],
+   "insights": [
+    "Emotional intelligence often predicts life success better than IQ alone.",
+    "Self-awareness and self-regulation help manage impulsive 'amygdala hijacks'.",
+    "Empathy and social skill are the foundation of effective relationships and leadership."
+   ],
+   "duration_min": 19,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Daniel Goleman synthesizes neuroscience to argue that emotional intelligence — recognizing, understanding, and managing emotions — is often a stronger predictor of success than IQ. He outlines five components: self-awareness, self-regulation, motivation, empathy, and social skills.",
+     "audio_path": "audio/b_038/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Amygdala Hijack",
+     "text_md": "The amygdala can trigger an intense emotional reaction that bypasses rational thought. Learning to recognize and manage this response is central to self-regulation and maturity.",
+     "audio_path": "audio/b_038/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Empathy and Social Skill",
+     "text_md": "Accurately reading others' emotions and responding skillfully underlies effective teamwork and leadership. These competencies can be developed with practice.",
+     "audio_path": "audio/b_038/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_039",
+   "title": "Give and Take",
+   "author": "Adam Grant",
+   "cover_url": "https://covers.openlibrary.org/b/id/7391212-L.jpg",
+   "description": "A revolutionary approach to success through generosity",
+   "category": [
+    "business",
+    "psychology"
+   ],
+   "insights": [
+    "People act as givers, takers, or matchers, which strongly shapes career outcomes.",
+    "Self-sacrificing givers can burn out at the bottom, but strategic givers rise to the top.",
+    "Generosity paired with clear boundaries builds trust and reputation that fuel long-term success."
+   ],
+   "duration_min": 17,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Adam Grant identifies three reciprocity styles — givers, takers, and matchers — and shows givers occupy both the bottom and top of the success ladder. The difference lies in how they give: selfless givers fall to the bottom, while strategic givers rise to the top.",
+     "audio_path": "audio/b_039/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Dangers of Selfless Giving",
+     "text_md": "Givers who neglect their own needs risk burnout and being taken advantage of. The fix isn't to give less, but to give in ways that also sustain their own energy and goals.",
+     "audio_path": "audio/b_039/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Five-Minute Favor",
+     "text_md": "Successful givers use 'powerless communication' like asking questions to build trust, and small acts like a 'five-minute favor' create outsized goodwill and network effects over time.",
+     "audio_path": "audio/b_039/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_040",
+   "title": "Never Split the Difference",
+   "author": "Chris Voss",
+   "cover_url": "https://covers.openlibrary.org/b/id/8365942-L.jpg",
+   "description": "Negotiate as if your life depended on it",
+   "category": [
+    "communication",
+    "business"
+   ],
+   "insights": [
+    "Tactical empathy and mirroring build trust and surface what the other side truly wants.",
+    "Calibrated, open-ended questions lead the other side to solve your problem for you.",
+    "A genuine 'That's right' signals real understanding and unlocks breakthroughs."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.9,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Former FBI hostage negotiator Chris Voss distills high-stakes negotiation tactics into strategies for everyday business and life. Rational, compromise-based approaches like 'splitting the difference' often fail; emotional intelligence and tactical empathy produce better outcomes.",
+     "audio_path": "audio/b_040/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Tactical Empathy and Mirroring",
+     "text_md": "Understanding and articulating the other side's feelings without agreeing builds rapport. Simple techniques like mirroring — repeating the last few words someone says — encourage them to reveal more.",
+     "audio_path": "audio/b_040/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Calibrated Questions",
+     "text_md": "Instead of demanding concessions, ask open-ended 'how' and 'what' questions that guide the counterpart toward solving your problem. Hearing 'That's right' signals real understanding and breakthrough.",
+     "audio_path": "audio/b_040/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_041",
+   "title": "Meditations",
+   "author": "Marcus Aurelius",
+   "cover_url": "https://covers.openlibrary.org/b/id/13202688-L.jpg",
+   "description": "Stoic reflections of a Roman emperor on virtue, duty, and mortality",
+   "category": [
+    "philosophy",
+    "mindfulness"
+   ],
+   "insights": [
+    "Focus only on what is within your control, and let go of the rest.",
+    "Virtue and reason are the only true goods; external events are neutral.",
+    "Reflecting on death daily sharpens your sense of purpose in life."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Meditations is a private journal by Roman Emperor Marcus Aurelius, recording Stoic reflections on duty, virtue, and the nature of the universe. Never intended for publication, it offers practical wisdom on living a disciplined, rational life amid power and adversity.",
+     "audio_path": "audio/b_041/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Dichotomy of Control",
+     "text_md": "Marcus reminds himself to distinguish between what is in his power — his judgments and actions — and what is not, such as others' opinions. Lasting peace comes from focusing only on the former.",
+     "audio_path": "audio/b_041/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Memento Mori",
+     "text_md": "He frequently reflects on death and the brevity of life, not morbidly but as motivation to act virtuously without wasted time. Accepting mortality frees him to live fully present.",
+     "audio_path": "audio/b_041/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_042",
+   "title": "Digital Minimalism",
+   "author": "Cal Newport",
+   "cover_url": "https://covers.openlibrary.org/b/id/8507540-L.jpg",
+   "description": "A philosophy for reclaiming focus in a world of compulsive tech use",
+   "category": [
+    "productivity",
+    "habits"
+   ],
+   "insights": [
+    "Run a 30-day digital declutter to reset your relationship with technology.",
+    "Solitude and deep conversation are essential, not optional, for wellbeing.",
+    "Adopt tools only when they clearly serve your deeply held values."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Digital Minimalism argues that the constant pull of smartphones and social media fragments attention and erodes wellbeing. Newport proposes using technology only in service of deeply held values, starting with a 30-day digital declutter.",
+     "audio_path": "audio/b_042/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Digital Declutter",
+     "text_md": "Newport prescribes stepping away from optional technologies for 30 days, then reintroducing only ones that pass a strict cost-benefit test. This reset reveals which apps genuinely add value.",
+     "audio_path": "audio/b_042/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Reclaiming Solitude",
+     "text_md": "Constant connectivity has nearly eliminated solitude from modern life, yet time alone with one's thoughts is crucial for creativity, emotional processing, and mental clarity.",
+     "audio_path": "audio/b_042/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_043",
+   "title": "Talking to Strangers",
+   "author": "Malcolm Gladwell",
+   "cover_url": "https://covers.openlibrary.org/b/id/8779682-L.jpg",
+   "description": "What we should know about the people we don't know",
+   "category": [
+    "psychology",
+    "communication"
+   ],
+   "insights": [
+    "Humans default to believing others are honest, which makes deception possible.",
+    "We wrongly assume a stranger's demeanor reveals their true inner state.",
+    "Context and circumstance shape behavior far more than we assume."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Talking to Strangers examines why humans are so consistently bad at understanding people they don't know, from espionage to police encounters. Our default-to-truth bias and reliance on demeanor lead to serious, sometimes catastrophic, misjudgments.",
+     "audio_path": "audio/b_043/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Default to Truth",
+     "text_md": "People are wired to believe others are telling the truth unless evidence against it becomes overwhelming. This tendency, while useful, is routinely exploited by con artists and spies.",
+     "audio_path": "audio/b_043/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Illusion of Transparency",
+     "text_md": "We assume a stranger's outward behavior accurately reflects their inner feelings. This false confidence leads to wrongful judgments in courtrooms, interrogations, and everyday encounters.",
+     "audio_path": "audio/b_043/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_044",
+   "title": "Why We Sleep",
+   "author": "Matthew Walker",
+   "cover_url": "https://covers.openlibrary.org/b/id/8814155-L.jpg",
+   "description": "Unlocking the power of sleep and dreams",
+   "category": [
+    "science",
+    "self-help"
+   ],
+   "insights": [
+    "Sleep is essential for memory consolidation, immunity, and emotional health.",
+    "Chronic sleep deprivation raises the risk of cancer, dementia, and heart disease.",
+    "REM and deep sleep perform distinct, irreplaceable biological functions."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Why We Sleep synthesizes decades of neuroscience to show that sleep is not optional downtime but a biological necessity for physical and mental health. Walker explains what happens during sleep and the severe consequences of chronic deprivation.",
+     "audio_path": "audio/b_044/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Stages of Sleep",
+     "text_md": "NREM deep sleep consolidates factual memories and clears metabolic waste from the brain, while REM sleep processes emotions and fuels creativity. Both stages are essential and cannot substitute for one another.",
+     "audio_path": "audio/b_044/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Cost of Sleep Deprivation",
+     "text_md": "Insufficient sleep is linked to increased risk of cancer, Alzheimer's, obesity, and weakened immunity, and measurably impairs learning and mood even after one short night.",
+     "audio_path": "audio/b_044/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_045",
+   "title": "The One Thing",
+   "author": "Gary Keller and Jay Papasan",
+   "cover_url": "https://covers.openlibrary.org/b/id/10351762-L.jpg",
+   "description": "The surprisingly simple truth behind extraordinary results",
+   "category": [
+    "productivity",
+    "business"
+   ],
+   "insights": [
+    "Ask the focusing question to find the single action that matters most.",
+    "Multitasking is a myth; extraordinary results come from narrow focus.",
+    "Success is built sequentially, like toppling one domino at a time."
+   ],
+   "duration_min": 13,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "The One Thing argues that success comes from narrowing focus to a single priority rather than spreading effort across many goals. Keller and Papasan present the focusing question as a tool for cutting through distraction to find high-leverage actions.",
+     "audio_path": "audio/b_045/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Focusing Question",
+     "text_md": "Asking 'What's the ONE Thing I can do such that by doing it everything else becomes easier or unnecessary?' narrows overwhelming choices down to what truly matters.",
+     "audio_path": "audio/b_045/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Domino Effect",
+     "text_md": "Small, well-chosen actions cascade into large results over time, so pursue goals sequentially, like lining up dominoes, rather than attacking everything simultaneously.",
+     "audio_path": "audio/b_045/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_046",
+   "title": "Built to Last",
+   "author": "Jim Collins and Jerry I. Porras",
+   "cover_url": "https://covers.openlibrary.org/b/id/684195-L.jpg",
+   "description": "Successful habits of visionary companies",
+   "category": [
+    "business",
+    "leadership"
+   ],
+   "insights": [
+    "Visionary companies preserve a core ideology while relentlessly driving progress.",
+    "Big Hairy Audacious Goals push organizations toward bold long-term ambition.",
+    "Enduring companies are built by strong cultures, not one great leader alone."
+   ],
+   "duration_min": 17,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Built to Last is a research-based study comparing visionary companies with exceptional long-term records against paired competitors. Collins and Porras identify the shared traits that let these companies thrive for decades, beyond any single product or leader.",
+     "audio_path": "audio/b_046/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Preserve the Core, Stimulate Progress",
+     "text_md": "Visionary companies hold tightly to a core ideology and values while relentlessly pushing for change and improvement in strategies and products around that core.",
+     "audio_path": "audio/b_046/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Big Hairy Audacious Goals (BHAGs)",
+     "text_md": "Enduring companies commit to bold, long-term goals that galvanize employees far beyond what incremental, safe targets could achieve.",
+     "audio_path": "audio/b_046/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_047",
+   "title": "The $100 Startup",
+   "author": "Chris Guillebeau",
+   "cover_url": "https://covers.openlibrary.org/b/id/7257004-L.jpg",
+   "description": "Reinvent the way you make a living, do what you love",
+   "category": [
+    "business",
+    "finance"
+   ],
+   "insights": [
+    "You don't need significant capital to launch a profitable business.",
+    "Find the overlap between what you love and what people will pay for.",
+    "Launch fast and refine based on real customer feedback, not theory."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "The $100 Startup profiles ordinary people who built profitable microbusinesses with minimal capital by combining passions with practical demand. Guillebeau distills their strategies into a framework anyone can apply.",
+     "audio_path": "audio/b_047/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Passion Meets Usefulness",
+     "text_md": "Successful microbusinesses emerge where what you love to do overlaps with what people are genuinely willing to pay for, rather than pursuing passion or profit alone.",
+     "audio_path": "audio/b_047/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Launch Before You're Ready",
+     "text_md": "Guillebeau encourages rapid, low-cost launches and constant iteration over lengthy planning, arguing real customer feedback teaches far more than any business plan.",
+     "audio_path": "audio/b_047/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_048",
+   "title": "The Almanack of Naval Ravikant",
+   "author": "Eric Jorgenson",
+   "cover_url": "https://covers.openlibrary.org/b/id/10449931-L.jpg",
+   "description": "A guide to wealth and happiness",
+   "category": [
+    "philosophy",
+    "finance"
+   ],
+   "insights": [
+    "Build wealth through specific knowledge, leverage, and accountability.",
+    "Happiness is a skill you cultivate, not a goal you eventually reach.",
+    "Play long-term games with long-term people to compound trust and value."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "The Almanack compiles the tweets, interviews, and essays of entrepreneur-philosopher Naval Ravikant into a unified guide on building wealth and finding happiness, blending practical business principles with timeless wisdom.",
+     "audio_path": "audio/b_048/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "How to Get Rich (Without Getting Lucky)",
+     "text_md": "Wealth comes from owning equity, applying specific knowledge that is hard to train for, and using leverage such as code and media rather than trading time for money.",
+     "audio_path": "audio/b_048/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Happiness as a Skill",
+     "text_md": "Peace and happiness are learnable skills, achieved by managing desire and living in the present, not fixed destinations reached only through achievement.",
+     "audio_path": "audio/b_048/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_049",
+   "title": "The Intelligent Investor",
+   "author": "Benjamin Graham",
+   "cover_url": "https://covers.openlibrary.org/b/id/36434-L.jpg",
+   "description": "The definitive book on value investing",
+   "category": [
+    "finance"
+   ],
+   "insights": [
+    "Treat a stock as partial ownership of a real business, not a ticker symbol.",
+    "Exploit the market's emotional swings instead of following them.",
+    "Always maintain a margin of safety to guard against error and bad luck."
+   ],
+   "duration_min": 19,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "The Intelligent Investor lays out Benjamin Graham's philosophy of value investing, teaching readers to analyze businesses rationally rather than speculate on price movements. It distinguishes the disciplined long-term investor from the emotional speculator.",
+     "audio_path": "audio/b_049/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Mr. Market",
+     "text_md": "Graham's allegory imagines an emotional business partner who offers to buy or sell shares daily at wildly different prices. Investors should exploit his irrational mood swings rather than be swayed by them.",
+     "audio_path": "audio/b_049/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Margin of Safety",
+     "text_md": "Buying securities at a significant discount to their intrinsic value provides a buffer against miscalculation, bad luck, and unpredictable market volatility.",
+     "audio_path": "audio/b_049/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_050",
+   "title": "The Miracle of Mindfulness",
+   "author": "Thich Nhat Hanh",
+   "cover_url": "https://covers.openlibrary.org/b/id/8262944-L.jpg",
+   "description": "An introduction to the practice of meditation",
+   "category": [
+    "mindfulness"
+   ],
+   "insights": [
+    "Mindfulness means being fully present during ordinary daily activities.",
+    "Conscious breathing is a simple anchor back to the present moment.",
+    "Everyday acts like washing dishes or walking can become meditation."
+   ],
+   "duration_min": 12,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "The Miracle of Mindfulness is Thich Nhat Hanh's gentle introduction to meditation, originally written as a letter to a fellow monk. Mindfulness is not confined to formal sitting practice but can infuse every ordinary daily activity.",
+     "audio_path": "audio/b_050/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Mindfulness in Daily Life",
+     "text_md": "Washing dishes, drinking tea, or walking can become acts of meditation when done with full awareness, rather than being rushed through on the way to the next task.",
+     "audio_path": "audio/b_050/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Conscious Breathing",
+     "text_md": "Following the breath is the simplest, most reliable way to anchor a scattered mind in the present moment, calming thoughts and restoring awareness at any point in the day.",
+     "audio_path": "audio/b_050/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_051",
+   "title": "The Millionaire Next Door",
+   "author": "Thomas J. Stanley",
+   "cover_url": "https://covers.openlibrary.org/b/id/797467-L.jpg",
+   "description": "The surprising secrets of America's frugal, everyday wealthy",
+   "category": [
+    "finance",
+    "habits"
+   ],
+   "insights": [
+    "Most real millionaires live well below their means, not lavishly.",
+    "Wealth comes from disciplined saving and investing, not high income.",
+    "Many high earners are 'under accumulators of wealth' due to overspending."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Based on years of research into US millionaires, Stanley and Danko reveal that most self-made wealthy people live unglamorous, frugal lives. They budget, drive used cars, and avoid status symbols, upending the popular image of the flashy rich.",
+     "audio_path": "audio/b_051/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Live Below Your Means",
+     "text_md": "Frugality, not high salary, is the strongest predictor of net worth. Wealthy people consistently spend less than they earn and prioritize saving and investing over conspicuous consumption.",
+     "audio_path": "audio/b_051/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Income Is Not Net Worth",
+     "text_md": "Many high-income professionals are 'under accumulators of wealth' who spend nearly everything they earn to maintain appearances. True millionaires focus on building assets rather than displaying income.",
+     "audio_path": "audio/b_051/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_052",
+   "title": "Nudge",
+   "author": "Richard H. Thaler and Cass R. Sunstein",
+   "cover_url": "https://covers.openlibrary.org/b/id/6402116-L.jpg",
+   "description": "How small choice-architecture tweaks improve health, wealth, happiness",
+   "category": [
+    "psychology",
+    "business"
+   ],
+   "insights": [
+    "Default options powerfully shape people's decisions.",
+    "Libertarian paternalism nudges better choices while preserving freedom.",
+    "Choice architecture can help people without banning options."
+   ],
+   "duration_min": 17,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Thaler and Sunstein argue that because human decision-making is predictably imperfect, thoughtfully designed 'choice architecture' can nudge people toward better outcomes in savings, health, and public policy, without restricting freedom of choice.",
+     "audio_path": "audio/b_052/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Libertarian Paternalism",
+     "text_md": "Institutions can steer people toward choices that improve their welfare while still preserving the freedom to choose otherwise, underlying policies like automatic retirement enrollment.",
+     "audio_path": "audio/b_052/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Power of Defaults",
+     "text_md": "Because people stick with pre-set options, defaults act as strong nudges. Automatic 401(k) enrollment and organ-donor opt-out systems show how changing the default dramatically shifts behavior.",
+     "audio_path": "audio/b_052/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_053",
+   "title": "Blink",
+   "author": "Malcolm Gladwell",
+   "cover_url": "https://covers.openlibrary.org/b/id/14421850-L.jpg",
+   "description": "The hidden power of thinking without thinking",
+   "category": [
+    "psychology",
+    "science"
+   ],
+   "insights": [
+    "Rapid 'thin-slicing' judgments can be surprisingly accurate.",
+    "Unconscious bias can quietly distort snap decisions.",
+    "Trained expertise sharpens the reliability of gut instinct."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Gladwell explores the science of rapid cognition, the instant judgments that arise from split-second thin-slicing of information. These snap decisions can rival deliberate analysis, but only when properly trained and protected from bias.",
+     "audio_path": "audio/b_053/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Thin-Slicing",
+     "text_md": "Experts, from art historians to tennis coaches, can accurately size up complex situations in seconds by unconsciously focusing on the few variables that matter most.",
+     "audio_path": "audio/b_053/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "When Instinct Goes Wrong",
+     "text_md": "Snap judgments can misfire, as in the Warren Harding error and split-second police shootings, where unconscious stereotypes overwhelmed accurate first impressions.",
+     "audio_path": "audio/b_053/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_054",
+   "title": "The Tipping Point",
+   "author": "Malcolm Gladwell",
+   "cover_url": "https://covers.openlibrary.org/b/id/10873292-L.jpg",
+   "description": "How little things can create big social epidemics",
+   "category": [
+    "business",
+    "psychology"
+   ],
+   "insights": [
+    "Ideas spread through Connectors, Mavens, and Salesmen.",
+    "A message's 'stickiness' determines whether it is remembered and acted on.",
+    "Small changes in context can dramatically shift collective behavior."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Gladwell examines how ideas, products, and behaviors spread like epidemics, reaching a critical 'tipping point' before exploding into widespread change, and the forces behind sudden trends.",
+     "audio_path": "audio/b_054/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Law of the Few",
+     "text_md": "A small number of special people, Connectors who know everyone, Mavens who accumulate knowledge, and Salesmen who persuade, drive the spread of trends far more than the average person.",
+     "audio_path": "audio/b_054/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Power of Context",
+     "text_md": "Environment and situational details, not just individual character, strongly influence behavior, illustrated by New York's crime drop following small changes like subway graffiti removal.",
+     "audio_path": "audio/b_054/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_055",
+   "title": "Getting Things Done",
+   "author": "David Allen",
+   "cover_url": "https://covers.openlibrary.org/b/id/109288-L.jpg",
+   "description": "The art of stress-free productivity through a trusted task system",
+   "category": [
+    "productivity",
+    "habits"
+   ],
+   "insights": [
+    "Capture every task and idea outside your head to reduce mental clutter.",
+    "Break projects down into clear, physical next actions.",
+    "Regular reviews keep your organizational system trustworthy."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "David Allen presents the GTD method, a workflow for capturing, clarifying, and organizing every commitment so the mind can focus on doing rather than remembering, achieving relaxed, stress-free control.",
+     "audio_path": "audio/b_055/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Five Steps of Workflow",
+     "text_md": "GTD is built on capturing everything that has your attention, clarifying what each item means, organizing results into lists, reflecting regularly, and engaging by choosing the right action.",
+     "audio_path": "audio/b_055/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Next Actions and Weekly Review",
+     "text_md": "Every project should be broken into a concrete next physical action so work never stalls from vagueness. A disciplined weekly review keeps the whole system trustworthy.",
+     "audio_path": "audio/b_055/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_056",
+   "title": "Educated",
+   "author": "Tara Westover",
+   "cover_url": "https://covers.openlibrary.org/b/id/8314077-L.jpg",
+   "description": "A memoir of leaving a survivalist upbringing to earn a Cambridge PhD",
+   "category": [
+    "biography"
+   ],
+   "insights": [
+    "Formal education can radically reshape identity and worldview.",
+    "Loyalty to family can conflict painfully with self-discovery.",
+    "Memory and trauma complicate how we tell our own life story."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Tara Westover recounts growing up in a strict, survivalist Mormon family in rural Idaho with no formal schooling, eventually entering a classroom at seventeen and going on to earn a PhD from Cambridge.",
+     "audio_path": "audio/b_056/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Growing Up Off the Grid",
+     "text_md": "Westover describes a childhood dominated by her father's anti-government paranoia, dangerous junkyard work, and abuse, while being denied medical care and schooling.",
+     "audio_path": "audio/b_056/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Price of Leaving",
+     "text_md": "As Tara pursues education, she reckons with the widening gulf between her new intellectual world and her family, ultimately losing relationships as the cost of claiming her own mind.",
+     "audio_path": "audio/b_056/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_057",
+   "title": "Becoming",
+   "author": "Michelle Obama",
+   "cover_url": "https://covers.openlibrary.org/b/id/8824664-L.jpg",
+   "description": "The former First Lady's memoir of identity, ambition, and service",
+   "category": [
+    "biography",
+    "leadership"
+   ],
+   "insights": [
+    "Identity is an ongoing process of 'becoming,' not a fixed endpoint.",
+    "Authenticity and resilience matter more than following a perfect path.",
+    "Public life requires balancing personal values with public expectations."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Michelle Obama traces her journey from a working-class childhood on Chicago's South Side through law school, marriage, and eight years as First Lady, reflecting on identity, family, and public service.",
+     "audio_path": "audio/b_057/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Becoming Me",
+     "text_md": "Michelle describes finding her voice through education and early career struggles, eventually leaving corporate law to pursue more meaningful public-service work aligned with her values.",
+     "audio_path": "audio/b_057/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Becoming Us",
+     "text_md": "The memoir covers her partnership with Barack, the pressures of his political rise, and raising daughters, showing how she navigated ambition and family life together.",
+     "audio_path": "audio/b_057/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_058",
+   "title": "The Body Keeps the Score",
+   "author": "Bessel van der Kolk",
+   "cover_url": "https://covers.openlibrary.org/b/id/8315367-L.jpg",
+   "description": "How trauma reshapes the body and brain, and paths toward healing",
+   "category": [
+    "psychology",
+    "science"
+   ],
+   "insights": [
+    "Trauma is stored physically in the body, not only in memory.",
+    "Talk therapy alone is often insufficient to resolve traumatic stress.",
+    "Safety, connection, and body-based therapies are key to recovery."
+   ],
+   "duration_min": 19,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Psychiatrist Bessel van der Kolk shows how traumatic experience physically rewires the brain and nervous system, and surveys innovative treatments, from yoga to EMDR, that help survivors heal.",
+     "audio_path": "audio/b_058/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "How Trauma Rewires the Brain",
+     "text_md": "Trauma disrupts brain regions governing threat detection and self-awareness, leaving survivors stuck in fight-or-flight responses long after the danger has passed.",
+     "audio_path": "audio/b_058/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Healing Through the Body",
+     "text_md": "Because trauma lives in the body, van der Kolk advocates body-oriented approaches like yoga, movement, and neurofeedback alongside talk therapy to help patients release stored stress.",
+     "audio_path": "audio/b_058/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_059",
+   "title": "Dare to Lead",
+   "author": "Brené Brown",
+   "cover_url": "https://covers.openlibrary.org/b/id/10304768-L.jpg",
+   "description": "Brave leadership built on vulnerability and honest conversations",
+   "category": [
+    "leadership",
+    "business"
+   ],
+   "insights": [
+    "Vulnerability is the birthplace of courage, not a weakness.",
+    "'Clear is kind' - honest feedback builds trust better than false comfort.",
+    "Daring leadership is a set of teachable, measurable skills."
+   ],
+   "duration_min": 17,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Brené Brown applies her research on vulnerability and shame to the workplace, arguing that brave leadership requires leaning into difficult conversations and uncertainty rather than armoring up.",
+     "audio_path": "audio/b_059/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Rumbling with Vulnerability",
+     "text_md": "Brown introduces 'rumbling,' the practice of having honest, uncomfortable conversations to surface real issues, arguing that avoiding vulnerability creates disengaged, fear-based teams.",
+     "audio_path": "audio/b_059/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Living into Our Values",
+     "text_md": "Effective leaders name their core values explicitly and hold themselves and their teams accountable, using clear expectations and feedback to build a culture of trust.",
+     "audio_path": "audio/b_059/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_060",
+   "title": "Extreme Ownership",
+   "author": "Jocko Willink and Leif Babin",
+   "cover_url": "https://covers.openlibrary.org/b/id/12835042-L.jpg",
+   "description": "Navy SEAL combat lessons on total accountability in leadership",
+   "category": [
+    "leadership",
+    "business"
+   ],
+   "insights": [
+    "Leaders must own every failure on their team with no excuses.",
+    "Simple, clearly communicated plans execute far better under pressure.",
+    "Decentralized command empowers subordinates to make fast, smart decisions."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Former Navy SEAL officers Willink and Babin distill combat leadership lessons from Iraq into business principles, centered on leaders taking complete responsibility for their team's outcomes.",
+     "audio_path": "audio/b_060/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Extreme Ownership",
+     "text_md": "There are no bad teams, only bad leaders. Leaders who take full ownership of failures, rather than blaming circumstances or subordinates, drive their teams to improve and succeed.",
+     "audio_path": "audio/b_060/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Decentralized Command",
+     "text_md": "Because no single leader can control every decision, the authors advocate training subordinates to understand the mission's intent so they can decide independently within their role.",
+     "audio_path": "audio/b_060/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_061",
+   "title": "The Richest Man in Babylon",
+   "author": "George S. Clason",
+   "cover_url": "https://covers.openlibrary.org/b/id/10491331-L.jpg",
+   "description": "Timeless parables teaching the laws of saving and building wealth",
+   "category": [
+    "finance",
+    "self-help"
+   ],
+   "insights": [
+    "Pay yourself first: save at least a tenth of all you earn.",
+    "Make your savings work for you through wise investments.",
+    "Guard your wealth from loss and seek advice from those experienced."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "A collection of parables set in ancient Babylon that distill timeless financial wisdom through Arkad, the city's richest man, and his path from poverty to fortune, each teaching a practical money principle.",
+     "audio_path": "audio/b_061/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Seven Cures for a Lean Purse",
+     "text_md": "Arkad teaches seven practical remedies for financial hardship, starting with saving a tenth of one's earnings, then controlling expenses, investing wisely, protecting capital, and increasing one's ability to earn.",
+     "audio_path": "audio/b_061/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Five Laws of Gold",
+     "text_md": "These laws explain how money grows for those who save consistently and invest with knowledgeable guidance, while ignoring them leads to losing wealth through impulsive decisions.",
+     "audio_path": "audio/b_061/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_062",
+   "title": "Your Money or Your Life",
+   "author": "Vicki Robin",
+   "cover_url": "https://covers.openlibrary.org/b/id/6975229-L.jpg",
+   "description": "A 9-step program to transform your relationship with money and time",
+   "category": [
+    "finance",
+    "self-help"
+   ],
+   "insights": [
+    "Calculate your real hourly wage to reveal money's true cost in life energy.",
+    "Track every dollar spent and earned to gain full financial awareness.",
+    "Reach the crossover point where investment income covers your expenses."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "A nine-step program for transforming your relationship with money by viewing spending as an exchange of life energy, guiding readers toward financial independence by aligning spending with values.",
+     "audio_path": "audio/b_062/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Life Energy and the Real Hourly Wage",
+     "text_md": "Money represents life energy, the hours traded for income. Calculating a true hourly wage after job costs lets readers judge whether purchases are worth the life energy spent.",
+     "audio_path": "audio/b_062/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Crossover Point",
+     "text_md": "The goal is reaching financial independence, where income from investments exceeds monthly expenses, achieved by tracking spending and investing savings in conservative assets.",
+     "audio_path": "audio/b_062/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_063",
+   "title": "I Will Teach You to Be Rich",
+   "author": "Ramit Sethi",
+   "cover_url": "https://covers.openlibrary.org/b/id/6305971-L.jpg",
+   "description": "A 6-week practical plan to automate savings, investing, and spending",
+   "category": [
+    "finance",
+    "productivity"
+   ],
+   "insights": [
+    "Automate your finances with a Conscious Spending Plan so good habits stick.",
+    "Spend extravagantly on things you love, cut costs ruthlessly elsewhere.",
+    "Start investing early in low-cost index funds and let compounding work."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "A practical, no-guilt personal finance guide offering a six-week action plan covering credit cards, bank accounts, budgeting, and investing, emphasizing automation and big wins over penny-pinching.",
+     "audio_path": "audio/b_063/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Conscious Spending Plan",
+     "text_md": "Instead of restrictive budgeting, Sethi allocates income toward fixed costs, investments, savings, and guilt-free spending, letting readers spend lavishly on priorities while automatically saving the rest.",
+     "audio_path": "audio/b_063/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Automate and Invest Early",
+     "text_md": "Set up automatic transfers so saving and investing happen without willpower, starting early with diversified, low-cost index funds to harness compound growth over decades.",
+     "audio_path": "audio/b_063/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_064",
+   "title": "The Total Money Makeover",
+   "author": "Dave Ramsey",
+   "cover_url": "https://covers.openlibrary.org/b/id/6873839-L.jpg",
+   "description": "A step-by-step plan to escape debt and build wealth through discipline",
+   "category": [
+    "finance",
+    "self-help"
+   ],
+   "insights": [
+    "Follow the 7 Baby Steps in order to move from debt to wealth.",
+    "Use the debt snowball: pay smallest debts first for motivating momentum.",
+    "Build a fully funded emergency fund before investing or big purchases."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Dave Ramsey's blueprint for eliminating debt and building wealth through a disciplined, behavior-focused system of seven sequential steps, combined with motivational stories.",
+     "audio_path": "audio/b_064/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Debt Snowball",
+     "text_md": "List debts from smallest to largest balance and pay them off in that order, regardless of interest rate. Quick wins from eliminating small debts build momentum to tackle larger ones.",
+     "audio_path": "audio/b_064/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Seven Baby Steps",
+     "text_md": "The plan moves from a starter emergency fund, to paying off all debt, to a full emergency fund, then investing 15% for retirement, saving for college, paying off the house, and building wealth.",
+     "audio_path": "audio/b_064/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_065",
+   "title": "The Millionaire Fastlane",
+   "author": "MJ DeMarco",
+   "cover_url": "https://covers.openlibrary.org/b/id/7892520-L.jpg",
+   "description": "Escape the slow-lane 9-to-5 grind and build wealth fast via business",
+   "category": [
+    "finance",
+    "business"
+   ],
+   "insights": [
+    "Wealth comes from building scalable business systems, not a salary.",
+    "The Slowlane path of saving and 401(k) investing takes too long.",
+    "Create products that provide value to many people to accelerate wealth."
+   ],
+   "duration_min": 13,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "DeMarco challenges the advice of saving small amounts over a career, presenting a Fastlane framework for building wealth quickly through entrepreneurship and scalable businesses.",
+     "audio_path": "audio/b_065/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Sidewalk, Slowlane, and Fastlane",
+     "text_md": "He categorizes financial paths into three lanes: the Sidewalk (living for today), the Slowlane (a job and retirement decades away), and the Fastlane (building an asset-generating business now).",
+     "audio_path": "audio/b_065/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Five Commandments of Wealth",
+     "text_md": "DeMarco outlines principles including need, entry, control, scale, and time. Businesses satisfying these can generate significant wealth much faster than traditional employment.",
+     "audio_path": "audio/b_065/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_066",
+   "title": "Principles",
+   "author": "Ray Dalio",
+   "cover_url": "https://covers.openlibrary.org/b/id/8315355-L.jpg",
+   "description": "Life and work principles for radical truth, transparency, and decisions",
+   "category": [
+    "business",
+    "leadership"
+   ],
+   "insights": [
+    "Embrace radical truth and radical transparency to make better decisions.",
+    "Use the 5-Step Process: goals, problems, diagnosis, design, execution.",
+    "Treat mistakes as opportunities for reflection and continuous improvement."
+   ],
+   "duration_min": 20,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Ray Dalio, founder of Bridgewater Associates, shares the life and management principles that shaped his journey and firm, for making sound, unemotional decisions.",
+     "audio_path": "audio/b_066/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Radical Truth and Radical Transparency",
+     "text_md": "Acknowledging reality accurately, even when uncomfortable, leads to better outcomes. Bridgewater's culture is built around open disagreement, recorded meetings, and direct feedback.",
+     "audio_path": "audio/b_066/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The 5-Step Process",
+     "text_md": "Dalio's method: set clear goals, identify problems, diagnose root causes, design solutions, and push through execution. Repeating this systematically drives continual improvement.",
+     "audio_path": "audio/b_066/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_067",
+   "title": "Shoe Dog",
+   "author": "Phil Knight",
+   "cover_url": "https://covers.openlibrary.org/b/id/8858487-L.jpg",
+   "description": "A candid memoir of the chaotic early years building Nike from nothing",
+   "category": [
+    "biography",
+    "business"
+   ],
+   "insights": [
+    "Building a company requires enduring constant risk of failure and cash crises.",
+    "A loyal, quirky team united by belief in the mission can outperform rivals.",
+    "Persistence and refusal to quit define entrepreneurial success."
+   ],
+   "duration_min": 17,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Phil Knight's memoir recounts the founding and early struggles of Blue Ribbon Sports, which became Nike, chronicling the constant financial peril and sheer persistence required to build the brand.",
+     "audio_path": "audio/b_067/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Constant Risk and Near-Bankruptcy",
+     "text_md": "The company repeatedly teetered on collapse due to cash flow problems, banking troubles, and supplier disputes. Despite rapid sales growth, it faced existential threats almost every year.",
+     "audio_path": "audio/b_067/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Buttfaces: An Unlikely Team",
+     "text_md": "Knight's early employees, nicknamed the Buttfaces, were a ragtag group of misfits bound by loyalty and belief in the brand, whose camaraderie became central to Nike's rise.",
+     "audio_path": "audio/b_067/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_068",
+   "title": "Steve Jobs",
+   "author": "Walter Isaacson",
+   "cover_url": "https://covers.openlibrary.org/b/id/12374726-L.jpg",
+   "description": "The definitive, unfiltered biography of Apple's visionary co-founder",
+   "category": [
+    "biography",
+    "business"
+   ],
+   "insights": [
+    "Relentless focus on simplicity and design drove Apple's revolutionary products.",
+    "Jobs's demanding, uncompromising style pushed teams to extraordinary work.",
+    "Merging technology with the liberal arts fueled lasting innovation."
+   ],
+   "duration_min": 19,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.9,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Based on extensive interviews, Isaacson's biography traces Jobs's life from adoption through founding Apple, his ouster, his return, and his battle with cancer, portraying both his genius and flaws.",
+     "audio_path": "audio/b_068/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Reality Distortion Field",
+     "text_md": "Jobs could convince himself and others that seemingly impossible goals were achievable through sheer will and persuasion, driving breakthrough products but also causing friction.",
+     "audio_path": "audio/b_068/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Technology Meets the Liberal Arts",
+     "text_md": "Jobs believed the best products emerged where technology met the humanities. His obsession with simplicity and user experience shaped the Macintosh, iPod, iPhone, and iPad.",
+     "audio_path": "audio/b_068/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_069",
+   "title": "Elon Musk",
+   "author": "Ashlee Vance",
+   "cover_url": "https://covers.openlibrary.org/b/id/8463846-L.jpg",
+   "description": "The definitive early biography of the entrepreneur behind Tesla and SpaceX",
+   "category": [
+    "biography",
+    "business"
+   ],
+   "insights": [
+    "Musk pursues audacious, world-changing missions like Mars colonization.",
+    "Extreme work intensity and first-principles thinking drive his companies.",
+    "Willingness to risk his entire fortune fuels high-stakes bets on new industries."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "With extensive access to Musk and colleagues, Vance traces his path from a difficult childhood in South Africa through PayPal, Tesla, and SpaceX, portraying his audacious ambitions and demanding style.",
+     "audio_path": "audio/b_069/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "First-Principles Thinking",
+     "text_md": "Musk breaks problems down to fundamental truths rather than relying on convention, letting him rethink rocket manufacturing at SpaceX and EV production at Tesla from the ground up.",
+     "audio_path": "audio/b_069/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Betting Everything on the Mission",
+     "text_md": "Musk repeatedly poured his personal fortune into Tesla and SpaceX during near-fatal crises in 2008, risking total ruin for his vision of sustainable energy and multi-planetary life.",
+     "audio_path": "audio/b_069/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_070",
+   "title": "The Hard Thing About Hard Things",
+   "author": "Ben Horowitz",
+   "cover_url": "https://covers.openlibrary.org/b/id/7279515-L.jpg",
+   "description": "Candid, hard-won advice on building a company when there's no easy answer",
+   "category": [
+    "business",
+    "leadership"
+   ],
+   "insights": [
+    "There's no formula for the hardest startup problems, only hard-earned wisdom.",
+    "Great CEOs make tough calls like layoffs and demotions with clarity.",
+    "Managing your own psychology is as critical as managing the company."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Drawing on running Loudcloud and Opsware, Horowitz offers unfiltered advice on the brutal realities of running a startup, focusing on difficult decisions that management books avoid.",
+     "audio_path": "audio/b_070/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Struggle",
+     "text_md": "Horowitz candidly describes the psychological toll of near-failure, including layoffs and the constant fear of running out of money, arguing that facing it honestly is essential to leading through crisis.",
+     "audio_path": "audio/b_070/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Making the Tough Calls",
+     "text_md": "The book offers concrete guidance on firing executives, conducting layoffs respectfully, and promoting managers, stressing that avoiding hard decisions only makes them harder later.",
+     "audio_path": "audio/b_070/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_071",
+   "title": "The E-Myth Revisited",
+   "author": "Michael E. Gerber",
+   "cover_url": "https://covers.openlibrary.org/b/id/684209-L.jpg",
+   "description": "Why most small businesses fail and how systems can fix that",
+   "category": [
+    "business",
+    "leadership"
+   ],
+   "insights": [
+    "Most owners are technicians suffering an 'entrepreneurial seizure,' not true entrepreneurs.",
+    "Work ON your business, not just IN it, by building repeatable systems.",
+    "Model your business like a franchise prototype, even if you never franchise it."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "The E-Myth Revisited debunks the myth that most businesses are started by skilled entrepreneurs; in reality most are started by technicians. Gerber argues that systemizing the business is the key to sustainable growth.",
+     "audio_path": "audio/b_071/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Entrepreneur, Manager, and Technician",
+     "text_md": "Every owner contains three personalities: the visionary Entrepreneur, the orderly Manager, and the hands-on Technician. Most small-business owners are dominated by the Technician and get trapped working in the business.",
+     "audio_path": "audio/b_071/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Franchise Prototype",
+     "text_md": "Treat your business as if you were about to franchise it, building turnkey systems and documented processes so it can run without depending on any one person, including the owner.",
+     "audio_path": "audio/b_071/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_072",
+   "title": "Traction",
+   "author": "Gino Wickman",
+   "cover_url": "https://covers.openlibrary.org/b/id/10678412-L.jpg",
+   "description": "A practical operating system to gain control of your business",
+   "category": [
+    "business",
+    "leadership"
+   ],
+   "insights": [
+    "Strengthen Six Key Components: Vision, People, Data, Issues, Process, and Traction.",
+    "Quarterly 'Rocks' turn big goals into 90-day priorities everyone can execute.",
+    "Weekly Level 10 Meetings keep teams focused and solve issues fast."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Traction introduces the Entrepreneurial Operating System (EOS), a practical framework to help leadership teams gain control of their business by strengthening Six Key Components.",
+     "audio_path": "audio/b_072/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Six Key Components",
+     "text_md": "EOS organizes a business around Vision, People, Data, Issues, Process, and Traction. Strengthening all six creates a healthy, well-run company.",
+     "audio_path": "audio/b_072/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Rocks and the Level 10 Meeting",
+     "text_md": "Set three to seven quarterly 'Rocks' to translate vision into action. The weekly 90-minute Level 10 Meeting reviews scorecards, rocks, and issues to keep the organization on track.",
+     "audio_path": "audio/b_072/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_073",
+   "title": "Blue Ocean Strategy",
+   "author": "W. Chan Kim and Renée Mauborgne",
+   "cover_url": "https://covers.openlibrary.org/b/id/8219313-L.jpg",
+   "description": "How to create uncontested market space and make rivals irrelevant",
+   "category": [
+    "business",
+    "leadership"
+   ],
+   "insights": [
+    "Compete in uncontested 'blue oceans' instead of bloody 'red ocean' markets.",
+    "Value innovation means pursuing differentiation and low cost simultaneously.",
+    "The Four Actions Framework (Eliminate-Reduce-Raise-Create) reshapes value curves."
+   ],
+   "duration_min": 17,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Lasting success comes not from beating competitors in existing markets ('red oceans') but from creating new, uncontested market space ('blue oceans'), shown through cases like Cirque du Soleil.",
+     "audio_path": "audio/b_073/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Value Innovation",
+     "text_md": "Rejecting the trade-off between value and cost, companies should create leaps in buyer value while reducing costs by eliminating factors an industry takes for granted, reshaping the strategy landscape.",
+     "audio_path": "audio/b_073/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Four Actions Framework",
+     "text_md": "Ask which factors to eliminate, reduce, raise, or create versus industry standards. Plotting these on a 'strategy canvas' reveals a new value curve that opens fresh market space.",
+     "audio_path": "audio/b_073/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_074",
+   "title": "The Innovator's Dilemma",
+   "author": "Clayton M. Christensen",
+   "cover_url": "https://covers.openlibrary.org/b/id/9274687-L.jpg",
+   "description": "Why great companies fail by doing everything 'right'",
+   "category": [
+    "business",
+    "leadership"
+   ],
+   "insights": [
+    "Sustaining innovations improve existing products; disruptive innovations create new markets from below.",
+    "Listening closely to current customers can blind managers to disruptive threats.",
+    "Established firms should spin off small units to pursue disruptive opportunities."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Christensen examines why successful, well-managed companies lose leadership when confronted by disruptive technologies, showing that the very practices that make firms excellent can cause them to miss disruption.",
+     "audio_path": "audio/b_074/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Sustaining vs. Disruptive Technologies",
+     "text_md": "Sustaining technologies improve performance mainstream customers value; disruptive technologies initially underperform but are cheaper or simpler, appealing to new customers before overtaking the mainstream.",
+     "audio_path": "audio/b_074/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Resource Allocation Trap",
+     "text_md": "Rational resource allocation pushes firms toward profitable sustaining innovations and away from small disruptive markets. Christensen recommends autonomous units sized to profit in emerging markets.",
+     "audio_path": "audio/b_074/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_075",
+   "title": "Contagious",
+   "author": "Jonah Berger",
+   "cover_url": "https://covers.openlibrary.org/b/id/9039370-L.jpg",
+   "description": "The science of why products, ideas, and behaviors catch on",
+   "category": [
+    "business",
+    "psychology"
+   ],
+   "insights": [
+    "Word of mouth is driven by six STEPPS: Social Currency, Triggers, Emotion, Public, Practical Value, Stories.",
+    "Content that makes people look smart or sparks strong emotion gets shared.",
+    "Public visibility and triggers turn private choices into viral behaviors."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Berger explains why certain ideas and products spread through word of mouth while others are ignored, distilling years of research into six key drivers, the STEPPS framework.",
+     "audio_path": "audio/b_075/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The STEPPS Framework",
+     "text_md": "Six ingredients of contagiousness: Social Currency, Triggers, Emotion, Public, Practical Value, and Stories, each illustrated with real marketing case studies.",
+     "audio_path": "audio/b_075/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Emotion and Triggers Drive Action",
+     "text_md": "High-arousal emotions push people to share, while ordinary environmental triggers keep products and ideas 'top of mind, tip of tongue' long after initial exposure.",
+     "audio_path": "audio/b_075/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_076",
+   "title": "Influence",
+   "author": "Robert B. Cialdini",
+   "cover_url": "https://covers.openlibrary.org/b/id/431011-L.jpg",
+   "description": "The classic study of the six universal principles of persuasion",
+   "category": [
+    "psychology",
+    "business"
+   ],
+   "insights": [
+    "Six weapons of influence: reciprocity, commitment/consistency, social proof, liking, authority, scarcity.",
+    "People use automatic mental shortcuts, making them vulnerable to compliance tactics.",
+    "Recognizing these principles helps you persuade ethically and resist manipulation."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Cialdini explores the psychology of why people say yes, identifying six core principles that drive automatic, often unconscious compliance, drawn from decades of research and undercover fieldwork.",
+     "audio_path": "audio/b_076/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Six Principles of Persuasion",
+     "text_md": "Reciprocity, commitment and consistency, social proof, liking, authority, and scarcity each reliably trigger compliance, whether we're aware of them or not.",
+     "audio_path": "audio/b_076/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Automatic Compliance",
+     "text_md": "In a complex world we rely on 'click-whirr' mental shortcuts, which compliance professionals exploit. Awareness of the triggers is the primary defense against manipulation.",
+     "audio_path": "audio/b_076/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_077",
+   "title": "Predictably Irrational",
+   "author": "Dan Ariely",
+   "cover_url": "https://covers.openlibrary.org/b/id/2314080-L.jpg",
+   "description": "The hidden, systematic forces that shape our everyday decisions",
+   "category": [
+    "psychology",
+    "finance"
+   ],
+   "insights": [
+    "Human decisions are irrational, but the irrationality is systematic and predictable.",
+    "Relativity and arbitrary anchors, not absolute value, shape what we pay.",
+    "'Free' and social norms trigger disproportionate, often counterproductive reactions."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Using behavioral economics experiments, Ariely shows people don't decide rationally but irrationally in consistent, predictable ways, which can help design better choices and policies.",
+     "audio_path": "audio/b_077/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Relativity and Anchoring",
+     "text_md": "We rarely judge value in absolute terms, instead comparing options to each other or to arbitrary 'anchors' that skew our future willingness to pay, even when meaningless.",
+     "audio_path": "audio/b_077/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Zero Cost and Social vs. Market Norms",
+     "text_md": "'Free' is an emotional hot button causing irrational trade-offs, and mixing social norms with market norms can backfire, souring relationships once cash enters a social exchange.",
+     "audio_path": "audio/b_077/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_078",
+   "title": "The Paradox of Choice",
+   "author": "Barry Schwartz",
+   "cover_url": "https://covers.openlibrary.org/b/id/20382-L.jpg",
+   "description": "Why having too many options makes us more anxious, not happier",
+   "category": [
+    "psychology",
+    "self-help"
+   ],
+   "insights": [
+    "Beyond a point, more options increase anxiety and decrease satisfaction.",
+    "'Maximizers' who seek the best option are less happy than 'satisficers'.",
+    "Limiting choices, using rules, and lowering expectations can boost well-being."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Schwartz argues that while some choice is good, the modern explosion of options has made people more anxious and less satisfied rather than more free.",
+     "audio_path": "audio/b_078/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Maximizers vs. Satisficers",
+     "text_md": "Maximizers exhaustively search for the optimal choice; satisficers settle for good enough. Maximizers make objectively better choices but feel worse, due to regret and unrealized alternatives.",
+     "audio_path": "audio/b_078/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Cost of Freedom",
+     "text_md": "Too much choice triggers regret and rising expectations, leading to disappointment even with good outcomes. Restricting options, adopting rules, and practicing gratitude reduce the burden.",
+     "audio_path": "audio/b_078/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_079",
+   "title": "Flow",
+   "author": "Mihaly Csikszentmihalyi",
+   "cover_url": "https://covers.openlibrary.org/b/id/11041932-L.jpg",
+   "description": "How full immersion in an activity creates optimal experience",
+   "category": [
+    "psychology",
+    "mindfulness"
+   ],
+   "insights": [
+    "Flow is complete absorption where challenge and skill are perfectly matched.",
+    "Clear goals and immediate feedback help sustain flow and focused attention.",
+    "People with an 'autotelic' personality find activities rewarding for their own sake."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Csikszentmihalyi's research into 'optimal experience'—being fully absorbed and enjoying an activity for its own sake—argues that true happiness comes from stretching ourselves to meet worthwhile challenges.",
+     "audio_path": "audio/b_079/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Conditions for Flow",
+     "text_md": "Flow arises when task challenge matches skill level, with clear goals and immediate feedback. Too much challenge causes anxiety, too little causes boredom, so flow lives in a narrow balance.",
+     "audio_path": "audio/b_079/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Autotelic Personality",
+     "text_md": "'Autotelic' individuals find flow almost anywhere by pursuing activities as intrinsically rewarding. Cultivating this mindset lets anyone bring more flow into everyday life and work.",
+     "audio_path": "audio/b_079/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_080",
+   "title": "Stumbling on Happiness",
+   "author": "Daniel Gilbert",
+   "cover_url": "https://covers.openlibrary.org/b/id/6803663-L.jpg",
+   "description": "Why the brain is remarkably bad at predicting future happiness",
+   "category": [
+    "psychology",
+    "science"
+   ],
+   "insights": [
+    "Imagination fills gaps about the future inaccurately, distorting happiness forecasts.",
+    "The 'impact bias' makes us overestimate the intensity and duration of future emotions.",
+    "Asking someone living an experience predicts our future feelings better than imagining it."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.4,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Gilbert explores 'affective forecasting'—predicting how future events will feel—and why these predictions are so often wrong, due to flaws in memory, perception, and imagination.",
+     "audio_path": "audio/b_080/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Flaws of Imagination",
+     "text_md": "Imagination fills missing details with present assumptions, glosses over how quickly we adapt, and is distorted by our current emotional state, all skewing our forecasts about what will make us happy.",
+     "audio_path": "audio/b_080/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Impact Bias and Surrogation",
+     "text_md": "We overestimate how intensely and how long events will affect us, underestimating our resilience. Relying on real-time reports of others already having the experience is surprisingly more accurate.",
+     "audio_path": "audio/b_080/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_081",
+   "title": "The Happiness Advantage",
+   "author": "Shawn Achor",
+   "cover_url": "https://covers.openlibrary.org/b/id/6938464-L.jpg",
+   "description": "Positive psychology proves happiness fuels success, not the reverse",
+   "category": [
+    "psychology",
+    "productivity"
+   ],
+   "insights": [
+    "Happiness precedes and fuels success, not just follows it.",
+    "The brain performs better when positive rather than neutral or negative.",
+    "Small habits like gratitude and exercise raise your happiness baseline."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Achor, a positive-psychology researcher, argues conventional wisdom has success and happiness backwards: happiness is a precursor to greater success, and offers seven principles for applying this.",
+     "audio_path": "audio/b_081/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Fulcrum and the Lever",
+     "text_md": "Our mindset is the fulcrum and our abilities the lever; shifting the fulcrum through a more positive mindset increases the lever's power, making success a product of mindset, not just effort.",
+     "audio_path": "audio/b_081/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Tetris Effect",
+     "text_md": "By training the brain to scan for positives and possibilities instead of problems, people become primed to notice opportunities for growth, compounding into greater resilience and success.",
+     "audio_path": "audio/b_081/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_082",
+   "title": "The Four Agreements",
+   "author": "Don Miguel Ruiz",
+   "cover_url": "https://covers.openlibrary.org/b/id/924521-L.jpg",
+   "description": "Toltec wisdom: four simple agreements for personal freedom",
+   "category": [
+    "self-help",
+    "philosophy"
+   ],
+   "insights": [
+    "Be impeccable with your word: speak with integrity.",
+    "Don't take anything personally: others' actions reflect their own reality.",
+    "Don't make assumptions: communicate clearly and ask questions."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Ruiz distills ancient Toltec wisdom into four powerful agreements that break self-limiting beliefs formed through social conditioning he calls 'domestication,' offering a path to personal freedom.",
+     "audio_path": "audio/b_082/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Be Impeccable with Your Word",
+     "text_md": "The most important agreement urges honesty and avoiding self-directed negativity or gossip, since words shape both self-image and reality, and misusing language is a root cause of suffering.",
+     "audio_path": "audio/b_082/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Don't Take Anything Personally",
+     "text_md": "Other people's opinions and actions are projections of their own reality, not truths about you. Internalizing this frees a person from needless emotional suffering.",
+     "audio_path": "audio/b_082/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_083",
+   "title": "The Untethered Soul",
+   "author": "Michael A. Singer",
+   "cover_url": "https://covers.openlibrary.org/b/id/10630553-L.jpg",
+   "description": "A guide to inner freedom by releasing the voice in your head",
+   "category": [
+    "mindfulness",
+    "philosophy"
+   ],
+   "insights": [
+    "You are the consciousness observing your thoughts, not the thoughts themselves.",
+    "Inner disturbance arises from resisting reality, not from reality itself.",
+    "Releasing blocked emotional energy leads to lasting inner peace."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Singer explores consciousness, teaching readers to distinguish their true self from their inner voice and emotional reactions, and to release psychological blocks for spiritual growth and freedom.",
+     "audio_path": "audio/b_083/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Voice Inside Your Head",
+     "text_md": "The constant inner monologue is a habitual mental pattern separate from true awareness. Observing it rather than being controlled by it is the first step toward inner liberation.",
+     "audio_path": "audio/b_083/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Letting Go",
+     "text_md": "Releasing energy blockages formed by resisted emotions, by surrendering resistance rather than avoiding it, is presented as the core spiritual discipline and the path to lasting freedom.",
+     "audio_path": "audio/b_083/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_084",
+   "title": "A New Earth",
+   "author": "Eckhart Tolle",
+   "cover_url": "https://covers.openlibrary.org/b/id/10858608-L.jpg",
+   "description": "Awakening to your life's purpose by transcending the ego",
+   "category": [
+    "mindfulness",
+    "philosophy"
+   ],
+   "insights": [
+    "The ego is a false, thought-based sense of self that creates suffering.",
+    "Presence, being fully in the Now, dissolves egoic patterns.",
+    "Humanity is undergoing a collective shift toward higher consciousness."
+   ],
+   "duration_min": 19,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Tolle expands on 'The Power of Now,' examining how the collective ego drives dysfunction in individuals and society, presenting present-moment awareness as the key to personal and collective transformation.",
+     "audio_path": "audio/b_084/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Ego",
+     "text_md": "The ego is an illusory identity built from thought, roles, and possessions that constantly seeks validation, causing conflict and suffering. Recognizing egoic patterns is the first step to freedom.",
+     "audio_path": "audio/b_084/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Finding Who You Truly Are",
+     "text_md": "By practicing presence and observing the ego without judgment, readers access a deeper sense of being beyond thought, which Tolle describes as one's true, formless identity.",
+     "audio_path": "audio/b_084/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_085",
+   "title": "The Seven Spiritual Laws of Success",
+   "author": "Deepak Chopra",
+   "cover_url": "https://covers.openlibrary.org/b/id/6632013-L.jpg",
+   "description": "Seven spiritual principles for turning dreams into reality",
+   "category": [
+    "self-help",
+    "mindfulness"
+   ],
+   "insights": [
+    "Success flows from aligning with the field of pure potentiality.",
+    "Giving and receiving are part of the same universal flow of abundance.",
+    "Detachment from outcomes paradoxically enables their fulfillment."
+   ],
+   "duration_min": 13,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Chopra presents seven spiritual laws drawn from natural law and ancient wisdom that he argues govern all creation, including true success, bringing abundance and fulfillment when applied consciously.",
+     "audio_path": "audio/b_085/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Law of Pure Potentiality",
+     "text_md": "Our essential nature is pure consciousness connected to infinite possibility, and practices like meditation reconnect us with that source of creativity and abundance.",
+     "audio_path": "audio/b_085/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Law of Giving",
+     "text_md": "The universe operates through dynamic exchange, so freely giving what we seek keeps abundance circulating. Generosity is framed as a practical spiritual practice.",
+     "audio_path": "audio/b_085/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_086",
+   "title": "Tuesdays with Morrie",
+   "author": "Mitch Albom",
+   "cover_url": "https://covers.openlibrary.org/b/id/12560417-L.jpg",
+   "description": "A dying professor's final life lessons to his former student",
+   "category": [
+    "biography",
+    "self-help"
+   ],
+   "insights": [
+    "Accepting death honestly makes living more meaningful.",
+    "Relationships and love matter more than career or possessions.",
+    "Forgiveness of others and oneself brings lasting peace."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Mitch Albom reconnects with his beloved professor Morrie Schwartz, dying of ALS. Their weekly Tuesday visits become a final 'class' on living, love, work, and death.",
+     "audio_path": "audio/b_086/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "On Death and Dying",
+     "text_md": "Morrie models facing mortality with openness rather than denial, arguing that acknowledging death makes people live more fully and appreciate each day.",
+     "audio_path": "audio/b_086/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "On Love and Relationships",
+     "text_md": "Morrie emphasizes that love and human connection, not money or achievement, give life ultimate meaning, urging Mitch to build a life around relationships rather than ambition alone.",
+     "audio_path": "audio/b_086/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_087",
+   "title": "Big Magic",
+   "author": "Elizabeth Gilbert",
+   "cover_url": "https://covers.openlibrary.org/b/id/7434843-L.jpg",
+   "description": "Living a creative life beyond fear, guided by curiosity",
+   "category": [
+    "self-help",
+    "psychology"
+   ],
+   "insights": [
+    "Curiosity is a more sustainable creative guide than passion.",
+    "Ideas are living forces that seek willing collaborators.",
+    "Fear will always be present; creativity means acting alongside it anyway."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Gilbert argues everyone has the right to a creative life regardless of talent or outcome, encouraging readers to pursue curiosity over perfection and make peace with fear.",
+     "audio_path": "audio/b_087/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Fear and Creativity",
+     "text_md": "Fear is a natural companion to creativity, not an enemy to defeat. The goal is to invite fear along without letting it drive, framing courage as creating in fear's presence.",
+     "audio_path": "audio/b_087/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Ideas as Living Entities",
+     "text_md": "Ideas are external forces circulating for a willing human partner, and showing up consistently is how one earns 'big magic.' Failing to act on an idea may cause it to move on.",
+     "audio_path": "audio/b_087/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_088",
+   "title": "The War of Art",
+   "author": "Steven Pressfield",
+   "cover_url": "https://covers.openlibrary.org/b/id/288439-L.jpg",
+   "description": "Breaking through creative blocks by defeating Resistance",
+   "category": [
+    "self-help",
+    "productivity"
+   ],
+   "insights": [
+    "Resistance is the universal force opposing any creative or growth-oriented act.",
+    "Turning pro means showing up and doing the work daily, regardless of mood.",
+    "Fear of Resistance is often a sign the work truly matters."
+   ],
+   "duration_min": 12,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Pressfield identifies 'Resistance'—procrastination, self-doubt, fear—as the internal force that stops people from pursuing their creative calling, and how to overcome it by 'turning pro.'",
+     "audio_path": "audio/b_088/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Defining Resistance",
+     "text_md": "Resistance takes many disguises, from procrastination to self-sabotage, and is strongest right before a breakthrough. Naming it is the first step to disarming it.",
+     "audio_path": "audio/b_088/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Turning Pro",
+     "text_md": "The antidote is the mindset of a professional: showing up daily, treating the work seriously, and not waiting for inspiration. Amateurs are ruled by fear; professionals act despite it.",
+     "audio_path": "audio/b_088/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_089",
+   "title": "Bird by Bird",
+   "author": "Anne Lamott",
+   "cover_url": "https://covers.openlibrary.org/b/id/240973-L.jpg",
+   "description": "Instructions on writing and life, one small step at a time",
+   "category": [
+    "self-help",
+    "communication"
+   ],
+   "insights": [
+    "Write imperfect first drafts to get past perfectionism.",
+    "Break overwhelming tasks into small, manageable pieces, bird by bird.",
+    "Pay attention to small, specific details; that's where good writing lives."
+   ],
+   "duration_min": 17,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Lamott offers candid, humorous advice on the craft of writing, blending practical technique with reflections on creativity, fear, and life. The title comes from advice to tackle a huge task 'bird by bird.'",
+     "audio_path": "audio/b_089/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Shitty First Drafts",
+     "text_md": "All good writing begins with messy, imperfect first drafts, freeing writers from the paralyzing need to get it right immediately. Revision, not initial perfection, is where good writing happens.",
+     "audio_path": "audio/b_089/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Bird by Bird",
+     "text_md": "Any daunting task becomes manageable when broken into small, immediate steps rather than tackled all at once, a philosophy that underlies her approach to both craft and anxiety.",
+     "audio_path": "audio/b_089/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_090",
+   "title": "Steal Like an Artist",
+   "author": "Austin Kleon",
+   "cover_url": "https://covers.openlibrary.org/b/id/7244512-L.jpg",
+   "description": "Ten ideas about creativity for those who feel overwhelmed",
+   "category": [
+    "self-help",
+    "business"
+   ],
+   "insights": [
+    "Nothing is original; all creative work builds on what came before.",
+    "Collect and remix influences rather than chasing pure originality.",
+    "Do good work and share it consistently; don't wait for permission."
+   ],
+   "duration_min": 13,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Kleon presents ten principles on creativity, arguing all artists borrow and transform ideas from those before them, demystifying the creative process and encouraging embracing influence.",
+     "audio_path": "audio/b_090/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Steal Like an Artist",
+     "text_md": "No work is wholly original; artists should openly study and 'steal' from many influences, transforming borrowed pieces into something new so no single influence is too obvious.",
+     "audio_path": "audio/b_090/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Share Your Work",
+     "text_md": "Creators should document and share their process publicly rather than waiting for a finished masterpiece, building an audience and habit through consistent visibility.",
+     "audio_path": "audio/b_090/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_091",
+   "title": "Range",
+   "author": "David Epstein",
+   "cover_url": "https://covers.openlibrary.org/b/id/8782615-L.jpg",
+   "description": "Why generalists triumph in a specialized world",
+   "category": [
+    "self-help",
+    "psychology"
+   ],
+   "insights": [
+    "Late specialization and broad sampling often beat early hyper-specialization.",
+    "Range of experience enables analogical thinking that solves novel problems.",
+    "Match quality between a person and their work matters more than a head start."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Epstein argues that in a world prizing narrow specialization, generalists with diverse experiences often have the edge in complex domains, contrasting the early-specialization and late-sampling paths.",
+     "audio_path": "audio/b_091/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Power of Sampling",
+     "text_md": "Delayed specialization lets people test many fields before finding the best 'match quality' between skills and interests. Sampling periods correlate with long-term success and satisfaction.",
+     "audio_path": "audio/b_091/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Analogical Thinking and Outsiders",
+     "text_md": "People with broad backgrounds transfer knowledge across domains through analogy, often solving problems specialists miss, as in breakthroughs from outsiders applying lessons from unrelated fields.",
+     "audio_path": "audio/b_091/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_092",
+   "title": "Peak",
+   "author": "Anders Ericsson",
+   "cover_url": "https://covers.openlibrary.org/b/id/10467082-L.jpg",
+   "description": "Secrets from the new science of expertise",
+   "category": [
+    "psychology",
+    "self-help"
+   ],
+   "insights": [
+    "Deliberate, feedback-driven practice, not just time on task, builds real expertise.",
+    "Mental representations let experts perceive and process information differently.",
+    "The '10,000-hour rule' oversimplifies; the structure and quality of practice matter most."
+   ],
+   "duration_min": 17,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Ericsson, whose research inspired the '10,000-hour rule,' explains that raw talent matters less than the right kind of practice, introducing 'deliberate practice' as the engine of expert performance.",
+     "audio_path": "audio/b_092/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Deliberate vs. Naive Practice",
+     "text_md": "Simply repeating a task for years doesn't create expertise. Deliberate practice requires specific goals, immediate feedback, and error correction, unlike naive practice, which plateaus quickly.",
+     "audio_path": "audio/b_092/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Mental Representations",
+     "text_md": "Experts build rich mental models that let them recognize patterns and self-correct faster than novices, whether in chess, music, or sport, built through structured practice.",
+     "audio_path": "audio/b_092/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_093",
+   "title": "Make Time",
+   "author": "Jake Knapp and John Zeratsky",
+   "cover_url": "https://covers.openlibrary.org/b/id/14179816-L.jpg",
+   "description": "How to focus on what matters every day",
+   "category": [
+    "productivity",
+    "habits"
+   ],
+   "insights": [
+    "Pick one daily 'Highlight' instead of juggling an endless to-do list.",
+    "Guard focus time by defaulting distracting apps and notifications off.",
+    "Physical energy from movement, sleep, and food directly fuels mental focus."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Two former Google designers offer a flexible daily system for reclaiming focus from the 'Busy Bandwagon' and 'Infinity Pools,' built on a four-step framework: Highlight, Laser, Energize, Reflect.",
+     "audio_path": "audio/b_093/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Highlight and Laser",
+     "text_md": "Each day, choose one Highlight, then use Laser tactics like blocking distractions and time-boxing to protect focused time, avoiding rigid productivity systems.",
+     "audio_path": "audio/b_093/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Energize and Reflect",
+     "text_md": "Sustained focus depends on physical energy, so the authors recommend exercise, real food, and less sitting, and a daily Reflect step to experiment with tactics and track what works.",
+     "audio_path": "audio/b_093/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_094",
+   "title": "Hyperfocus",
+   "author": "Chris Bailey",
+   "cover_url": "https://covers.openlibrary.org/b/id/10239359-L.jpg",
+   "description": "How to be more productive in a world of distraction",
+   "category": [
+    "productivity",
+    "mindfulness"
+   ],
+   "insights": [
+    "Attention management, not time management, is the real key to productivity.",
+    "Hyperfocus, single-tasking with intention, produces far better work than multitasking.",
+    "Deliberate mind-wandering, or scatterfocus, boosts creativity and planning."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Bailey explores how attention, not time, is our most limited resource, teaching two modes: hyperfocus (deep single-task concentration) and scatterfocus (deliberate mind-wandering).",
+     "audio_path": "audio/b_094/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Hyperfocus",
+     "text_md": "Choosing one clear task, eliminating distractions, and fully committing attention creates a flow-like productive state, with concrete steps to make it repeatable.",
+     "audio_path": "audio/b_094/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Scatterfocus",
+     "text_md": "Deliberately letting the mind wander, rather than filling idle moments with a phone, activates the brain's default mode network, generating insights and complementing hyperfocus.",
+     "audio_path": "audio/b_094/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_095",
+   "title": "Indistractable",
+   "author": "Nir Eyal",
+   "cover_url": "https://covers.openlibrary.org/b/id/9129784-L.jpg",
+   "description": "How to control your attention and choose your life",
+   "category": [
+    "productivity",
+    "habits"
+   ],
+   "insights": [
+    "Distraction is often an escape from uncomfortable internal triggers, not just tech.",
+    "Scheduling your values via timeboxing turns intentions into traceable actions.",
+    "Precommitment pacts make it harder to give in to distraction in the moment."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Eyal teaches readers to control their own attention, arguing distraction is driven by internal discomfort as much as external triggers, offering a model to become 'indistractable.'",
+     "audio_path": "audio/b_095/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Mastering Internal Triggers",
+     "text_md": "Most distraction starts with an uncomfortable internal state, boredom, loneliness, anxiety, that we try to escape. Identifying and reframing these triggers comes before reaching for a device.",
+     "audio_path": "audio/b_095/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Timeboxing and Pacts",
+     "text_md": "Turning values into scheduled time closes the gap between intention and action, and making effort, price, or identity pacts prevents backsliding, alongside hacking back external triggers.",
+     "audio_path": "audio/b_095/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_096",
+   "title": "Hooked",
+   "author": "Nir Eyal",
+   "cover_url": "https://covers.openlibrary.org/b/id/12511799-L.jpg",
+   "description": "How to build habit-forming products",
+   "category": [
+    "business",
+    "psychology"
+   ],
+   "insights": [
+    "The Hook Model, trigger, action, variable reward, investment, drives habitual use.",
+    "Variable, unpredictable rewards are more engaging than fixed ones.",
+    "User investment in a product increases the likelihood they return."
+   ],
+   "duration_min": 13,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.5,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Eyal explains the 'Hook Model,' a four-step cycle, trigger, action, variable reward, investment, that successful products use to create habitual engagement, with case studies from Instagram and Twitter.",
+     "audio_path": "audio/b_096/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Hook Model",
+     "text_md": "Each cycle begins with a trigger prompting an action, followed by a variable reward that keeps users curious. Unpredictable rewards are especially effective at driving repeat behavior.",
+     "audio_path": "audio/b_096/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Investment and Habit Formation",
+     "text_md": "The investment phase asks users to put in data, effort, or social capital, increasing the odds they return. Repeating the cycle turns a conscious choice into an automatic habit.",
+     "audio_path": "audio/b_096/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_097",
+   "title": "Thinking in Bets",
+   "author": "Annie Duke",
+   "cover_url": "https://covers.openlibrary.org/b/id/8792782-L.jpg",
+   "description": "Making smarter decisions when you don't have all the facts",
+   "category": [
+    "psychology",
+    "self-help"
+   ],
+   "insights": [
+    "Judge decisions by the process, not just the outcome; 'resulting' is a trap.",
+    "Treat beliefs and choices as bets made under uncertainty, expressed as probabilities.",
+    "A truthseeking group of peers improves objectivity and calibration."
+   ],
+   "duration_min": 15,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Former poker pro Annie Duke argues good decisions should be judged by process quality, not outcome, a fallacy she calls 'resulting,' teaching readers to think probabilistically and treat decisions as bets.",
+     "audio_path": "audio/b_097/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Resulting and Probabilistic Thinking",
+     "text_md": "A good decision can produce a bad outcome due to luck, and vice versa. Duke urges evaluating the reasoning process and range of possible outcomes instead of just what happened.",
+     "audio_path": "audio/b_097/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Truthseeking Groups",
+     "text_md": "Because we're prone to self-serving biases, Duke recommends 'truthseeking' groups that challenge your reasoning, and stating confidence as a percentage to improve calibration.",
+     "audio_path": "audio/b_097/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_098",
+   "title": "Superforecasting",
+   "author": "Philip E. Tetlock",
+   "cover_url": "https://covers.openlibrary.org/b/id/9142114-L.jpg",
+   "description": "The art and science of prediction",
+   "category": [
+    "psychology",
+    "science"
+   ],
+   "insights": [
+    "Precise, incremental probability estimates beat vague or overconfident predictions.",
+    "Regularly updating beliefs in small steps as evidence arrives improves accuracy.",
+    "Forecasting skill can be taught and depends on humility and open-mindedness."
+   ],
+   "duration_min": 18,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.6,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Based on the Good Judgment Project, Tetlock studies 'superforecasters', ordinary people who consistently outperform experts at predicting world events, distilling the habits that make them accurate.",
+     "audio_path": "audio/b_098/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Breaking Predictions into Probabilities",
+     "text_md": "Superforecasters avoid vague, binary predictions, assigning precise numerical probabilities and updating them incrementally as new evidence arrives, outperforming bold, overconfident forecasts.",
+     "audio_path": "audio/b_098/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Traits of Superforecasters",
+     "text_md": "They share intellectual humility, active open-mindedness, comfort with numbers, and breaking big questions into smaller sub-questions. Forecasting is a learnable skill, not a fixed gift.",
+     "audio_path": "audio/b_098/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_099",
+   "title": "Factfulness",
+   "author": "Hans Rosling",
+   "cover_url": "https://covers.openlibrary.org/b/id/8186237-L.jpg",
+   "description": "Ten instincts that distort how we see the world",
+   "category": [
+    "science",
+    "psychology"
+   ],
+   "insights": [
+    "The world is generally better and improving faster than most people believe.",
+    "Ten deep-seated instincts systematically distort our worldview.",
+    "Checking claims against real data, not gut instinct, gives an accurate picture."
+   ],
+   "duration_min": 16,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.8,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Global-health researcher Hans Rosling shows, using data, that most people dramatically misjudge the world as poorer and more dangerous than it is, identifying ten instinctive biases and how to counter them.",
+     "audio_path": "audio/b_099/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "The Gap and Negativity Instincts",
+     "text_md": "We instinctively split the world into two opposing categories when most people live in the middle, and we notice bad news more than steady improvement, both distorting our sense of progress.",
+     "audio_path": "audio/b_099/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "The Straight Line Instinct",
+     "text_md": "We assume trends continue in a straight line, ignoring that most trends curve or level off. Rosling urges looking for the actual shape of data rather than extrapolating blindly.",
+     "audio_path": "audio/b_099/2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "b_100",
+   "title": "The Gifts of Imperfection",
+   "author": "Brené Brown",
+   "cover_url": "https://covers.openlibrary.org/b/id/7237826-L.jpg",
+   "description": "Let go of who you think you're supposed to be",
+   "category": [
+    "self-help",
+    "mindfulness"
+   ],
+   "insights": [
+    "Perfectionism is a shield against shame, not a path to growth.",
+    "Genuine belonging requires authenticity, including showing up as imperfect.",
+    "Shame loses power when it's spoken and met with self-compassion and connection."
+   ],
+   "duration_min": 14,
+   "chapter_count": 3,
+   "pro_only": false,
+   "rating": 4.7,
+   "lang": "en",
+   "chapters": [
+    {
+     "idx": 0,
+     "title": "Overview",
+     "text_md": "Brené Brown draws on a decade studying shame and vulnerability to define 'wholehearted living', engaging with life from a place of worthiness rather than perfectionism, with ten guideposts.",
+     "audio_path": "audio/b_100/0.mp3"
+    },
+    {
+     "idx": 1,
+     "title": "Cultivating Authenticity",
+     "text_md": "Brown distinguishes perfectionism, a shield against shame, from healthy striving, arguing perfectionism blocks growth and connection. Authenticity means choosing to be real over being liked.",
+     "audio_path": "audio/b_100/1.mp3"
+    },
+    {
+     "idx": 2,
+     "title": "Wholehearted Living",
+     "text_md": "Wholehearted people believe they are worthy of love and belonging as they are, not because of achievement. Shame resilience, self-compassion, and reaching out is the path to embracing imperfection.",
+     "audio_path": "audio/b_100/2.mp3"
+    }
+   ]
+  }
+ ],
+ "categories": [
+  {
+   "id": "productivity",
+   "name": "Năng suất",
+   "icon": "bolt",
+   "book_count": 16
+  },
+  {
+   "id": "psychology",
+   "name": "Tâm lý",
+   "icon": "psychology",
+   "book_count": 32
+  },
+  {
+   "id": "finance",
+   "name": "Tài chính",
+   "icon": "payments",
+   "book_count": 14
+  },
+  {
+   "id": "self-help",
+   "name": "Phát triển bản thân",
+   "icon": "self_improvement",
+   "book_count": 36
+  },
+  {
+   "id": "business",
+   "name": "Kinh doanh",
+   "icon": "business_center",
+   "book_count": 30
+  },
+  {
+   "id": "mindfulness",
+   "name": "Chánh niệm",
+   "icon": "spa",
+   "book_count": 12
+  },
+  {
+   "id": "philosophy",
+   "name": "Triết học",
+   "icon": "menu_book",
+   "book_count": 13
+  },
+  {
+   "id": "science",
+   "name": "Khoa học",
+   "icon": "science",
+   "book_count": 9
+  },
+  {
+   "id": "biography",
+   "name": "Tiểu sử",
+   "icon": "person",
+   "book_count": 7
+  },
+  {
+   "id": "leadership",
+   "name": "Lãnh đạo",
+   "icon": "groups",
+   "book_count": 14
+  },
+  {
+   "id": "communication",
+   "name": "Giao tiếp",
+   "icon": "forum",
+   "book_count": 4
+  },
+  {
+   "id": "habits",
+   "name": "Thói quen",
+   "icon": "repeat",
+   "book_count": 9
+  }
+ ],
+ "free_daily": [
+  {
+   "date": "2026-07-12",
+   "book_ids": [
+    "b_001",
+    "b_002",
+    "b_003",
+    "b_004",
+    "b_005"
+   ]
+  }
+ ]
+}

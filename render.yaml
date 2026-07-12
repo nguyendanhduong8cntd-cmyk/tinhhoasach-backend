@@ -1,0 +1,22 @@
+# Render Blueprint — deploy the Tinh Hoa Sách backend as a FREE public web service.
+#
+# One-click deploy:
+#   1. Go to https://dashboard.render.com  (sign up free, no credit card)
+#   2. New  →  Blueprint  →  connect this GitHub repo  →  Apply
+#   3. Wait ~3-5 min. Your public URL will be https://tinhhoasach-backend.onrender.com
+#
+# On first boot the app auto-seeds all 100 books from app/seed_data.json.
+# No env vars are required (defaults work). The free plan sleeps after ~15 min
+# idle; the first request then takes ~50s to wake, subsequent requests are fast.
+services:
+  - type: web
+    name: tinhhoasach-backend
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.6"

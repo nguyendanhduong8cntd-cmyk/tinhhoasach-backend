@@ -8,3 +8,4 @@ venv/
 secrets/
 .mypy_cache/
 .pytest_cache/
+reseed_books.py

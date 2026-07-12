@@ -1,89 +1,91 @@
-"""Idempotent dev seed: categories, books+chapters, today's free-daily rotation."""
+"""Idempotent dev seed.
+
+On an empty DB, seeds the full catalog from ``seed_data.json`` (100 books with
+covers, chapters, categories, and today's free-daily) if that file is present;
+otherwise falls back to a tiny built-in sample. Runs on every startup but only
+writes when the ``books`` table is empty, so it is safe on ephemeral hosts
+(e.g. a free Render web service whose disk resets on each deploy).
+"""
 from __future__ import annotations
 
 import datetime
+import json
+import os
 
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from .db import Book, Category, Chapter, FreeDaily
 
-_CATEGORIES = [
+_SEED_JSON = os.path.join(os.path.dirname(__file__), "seed_data.json")
+
+# Tiny fallback used only when seed_data.json is missing.
+_FALLBACK_CATEGORIES = [
     {"id": "productivity", "name": "Năng suất", "icon": "bolt", "book_count": 2},
     {"id": "psychology", "name": "Tâm lý", "icon": "psychology", "book_count": 1},
     {"id": "finance", "name": "Tài chính", "icon": "payments", "book_count": 1},
 ]
-
-_BOOKS = [
+_FALLBACK_BOOKS = [
     {
         "id": "b_001", "title": "Atomic Habits", "author": "James Clear",
-        "cover_url": "https://cdn.tinhhoasach.local/atomic.jpg",
-        "description": "Thay đổi nhỏ, kết quả lớn — xây thói quen 1% mỗi ngày.",
-        "category": ["productivity"], "insights": ["Thói quen 1% mỗi ngày cộng dồn.",
-                                                    "Môi trường > ý chí."],
-        "duration_min": 15, "chapter_count": 3, "pro_only": True, "rating": 4.8,
-        "chapters": [
-            {"idx": 0, "title": "Giới thiệu", "text_md": "# Giới thiệu\nThói quen là lãi kép.",
-             "audio_path": "audio/b_001/0.mp3"},
-            {"idx": 1, "title": "Quy luật 1 — Làm cho rõ ràng",
-             "text_md": "# Quy luật 1\n...", "audio_path": "audio/b_001/1.mp3"},
-            {"idx": 2, "title": "Quy luật 2 — Làm cho hấp dẫn",
-             "text_md": "# Quy luật 2\n...", "audio_path": "audio/b_001/2.mp3"},
-        ],
-    },
-    {
-        "id": "b_002", "title": "Deep Work", "author": "Cal Newport",
-        "cover_url": "https://cdn.tinhhoasach.local/deepwork.jpg",
-        "description": "Tập trung sâu trong thế giới xao nhãng.",
-        "category": ["productivity"], "insights": ["Tập trung sâu là siêu năng lực."],
-        "duration_min": 12, "chapter_count": 2, "pro_only": True, "rating": 4.7,
-        "chapters": [
-            {"idx": 0, "title": "Deep Work là gì", "text_md": "# Deep Work\n...",
-             "audio_path": "audio/b_002/0.mp3"},
-            {"idx": 1, "title": "Bốn quy tắc", "text_md": "# Quy tắc\n...",
-             "audio_path": "audio/b_002/1.mp3"},
-        ],
-    },
-    {
-        "id": "b_003", "title": "Thinking, Fast and Slow", "author": "Daniel Kahneman",
-        "cover_url": "https://cdn.tinhhoasach.local/tfs.jpg",
-        "description": "Hai hệ thống tư duy điều khiển quyết định của bạn.",
-        "category": ["psychology"], "insights": ["Hệ 1 nhanh & cảm tính; Hệ 2 chậm & lý trí."],
-        "duration_min": 18, "chapter_count": 1, "pro_only": True, "rating": 4.6,
-        "chapters": [
-            {"idx": 0, "title": "Hai hệ thống", "text_md": "# Hai hệ thống\n...",
-             "audio_path": "audio/b_003/0.mp3"},
-        ],
-    },
-    {
-        "id": "b_004", "title": "The Psychology of Money", "author": "Morgan Housel",
-        "cover_url": "https://cdn.tinhhoasach.local/psymoney.jpg",
-        "description": "Hành vi quan trọng hơn kiến thức tài chính.",
-        "category": ["finance"], "insights": ["Giàu là thứ bạn không thấy."],
-        "duration_min": 14, "chapter_count": 1, "pro_only": False, "rating": 4.7,
-        "chapters": [
-            {"idx": 0, "title": "Không ai điên cả", "text_md": "# Mở đầu\n...",
-             "audio_path": "audio/b_004/0.mp3"},
-        ],
+        "cover_url": "", "description": "Thay đổi nhỏ, kết quả lớn.",
+        "category": ["productivity"], "insights": ["Thói quen 1% mỗi ngày cộng dồn."],
+        "duration_min": 15, "chapter_count": 1, "pro_only": False, "rating": 4.8, "lang": "en",
+        "chapters": [{"idx": 0, "title": "Giới thiệu", "text_md": "# Giới thiệu\nThói quen là lãi kép.",
+                      "audio_path": "audio/b_001/0.mp3"}],
     },
 ]
+
+
+def _load_seed() -> dict:
+    """Return {'books', 'categories', 'free_daily'} from JSON, or the fallback."""
+    try:
+        with open(_SEED_JSON, encoding="utf-8") as f:
+            data = json.load(f)
+        if data.get("books"):
+            return data
+    except (OSError, ValueError):
+        pass
+    today = datetime.date.today().isoformat()
+    return {"books": _FALLBACK_BOOKS, "categories": _FALLBACK_CATEGORIES,
+            "free_daily": [{"date": today, "book_ids": ["b_001"]}]}
 
 
 def seed_all(db: Session) -> None:
     if db.execute(select(Book).limit(1)).first():
         return  # already seeded
 
-    for c in _CATEGORIES:
-        db.add(Category(**c))
+    data = _load_seed()
 
-    for b in _BOOKS:
-        chapters = b.pop("chapters")
-        db.add(Book(**b))
+    for c in data.get("categories", []):
+        db.add(Category(id=c["id"], name=c["name"], icon=c.get("icon", ""),
+                        book_count=c.get("book_count", 0)))
+
+    for b in data["books"]:
+        chapters = b.get("chapters", [])
+        db.add(Book(
+            id=b["id"], title=b["title"], author=b["author"], cover_url=b.get("cover_url", ""),
+            description=b.get("description", ""), category=b.get("category", []),
+            insights=b.get("insights", []), duration_min=b.get("duration_min", 0),
+            chapter_count=b.get("chapter_count", len(chapters)),
+            pro_only=bool(b.get("pro_only", False)), rating=b.get("rating", 0.0),
+            lang=b.get("lang", "en"),
+        ))
         for ch in chapters:
             db.add(Chapter(
                 id=f"{b['id']}_{ch['idx']}", book_id=b["id"], idx=ch["idx"],
-                title=ch["title"], text_md=ch["text_md"], audio_path=ch["audio_path"]))
+                title=ch["title"], text_md=ch["text_md"], audio_path=ch.get("audio_path", "")))
 
+    # Free-daily: use the seeded rows, but always ensure TODAY has an entry.
     today = datetime.date.today().isoformat()
-    db.add(FreeDaily(date=today, book_ids=["b_001"]))  # server-chosen free book of the day
+    seen_today = False
+    for fd in data.get("free_daily", []):
+        date = fd["date"]
+        if date == today:
+            seen_today = True
+        db.add(FreeDaily(date=date, book_ids=fd.get("book_ids", [])))
+    if not seen_today:
+        first_ids = [b["id"] for b in data["books"][:5]]
+        db.merge(FreeDaily(date=today, book_ids=first_ids))
+
     db.commit()
