@@ -15,6 +15,10 @@ from .envelope import ApiError
 _client = None
 
 
+def _has_key() -> bool:
+    return bool(get_settings().anthropic_api_key)
+
+
 def _get_client():
     """Lazily build the Anthropic client so the app still boots without the key/package."""
     global _client
@@ -66,8 +70,37 @@ SUMMARY_SYSTEM = (
 )
 
 
+def _mock_summary(title: str, author: Optional[str]) -> dict:
+    """Sample summary used for UI testing when no ANTHROPIC_API_KEY is set (no credit spent)."""
+    demo = "(Nội dung demo để test giao diện — khi backend có ANTHROPIC_API_KEY và tài khoản có credit, phần này do AI thật viết.)"
+    return {
+        "title": title,
+        "author": author or "Tác giả",
+        "description": f"Bản tóm tắt mẫu (demo) cho \"{title}\".",
+        "category": "General",
+        "insights": [
+            f"Ý tưởng cốt lõi của \"{title}\" là thay đổi tư duy để hành động hiệu quả hơn.",
+            "Những thay đổi nhỏ, nhất quán tạo ra kết quả lớn theo thời gian.",
+            "Hiểu nguyên nhân gốc rễ quan trọng hơn xử lý triệu chứng bề mặt.",
+            "Áp dụng ngay một điều nhỏ hôm nay tốt hơn kế hoạch hoàn hảo ngày mai.",
+        ],
+        "chapters": [
+            {"title": "Chương 1 — Bối cảnh & vấn đề",
+             "text_md": f"Cuốn \"{title}\" mở đầu bằng việc đặt ra vấn đề trung tâm và vì sao nó quan trọng.\n\n{demo}"},
+            {"title": "Chương 2 — Nguyên tắc chính",
+             "text_md": f"Tác giả trình bày những nguyên tắc nền tảng và ví dụ minh hoạ.\n\n{demo}"},
+            {"title": "Chương 3 — Áp dụng thực tế",
+             "text_md": f"Phần này biến lý thuyết thành các bước hành động cụ thể bạn làm được ngay.\n\n{demo}"},
+        ],
+        "final_summary": f"Tổng kết: \"{title}\" cho thấy thay đổi bền vững đến từ hệ thống và thói quen, không phải ý chí nhất thời. (Bản demo.)",
+    }
+
+
 def generate_summary(title: str, author: Optional[str] = None) -> dict:
-    """Generate a structured book summary via Claude. Returns a normalized dict."""
+    """Generate a structured book summary via Claude. Returns a normalized dict.
+    No key configured -> returns a demo sample so the UI is testable without spending credit."""
+    if not _has_key():
+        return _mock_summary(title, author)
     client = _get_client()
     settings = get_settings()
     user = f"Book title: {title}" + (f"\nAuthor: {author}" if author else "")
@@ -103,8 +136,22 @@ CHAT_SYSTEM = (
 )
 
 
+def _mock_chat(message: str) -> str:
+    """Sample chatbot reply for UI testing when no ANTHROPIC_API_KEY is set (no credit spent)."""
+    return (
+        f"Mình đã nhận: \"{message}\".\n\n"
+        "Gợi ý (demo): thử \"Atomic Habits\" — xây thói quen tí hon, hoặc \"Deep Work\" — làm việc "
+        "tập trung sâu. Bạn muốn thể loại nào để mình gợi ý thêm?\n\n"
+        "(Đây là câu trả lời demo để test giao diện chat. Khi backend có ANTHROPIC_API_KEY + credit, "
+        "Alpha Helper sẽ trả lời bằng AI thật.)"
+    )
+
+
 def chat(message: str, history: Optional[list] = None) -> str:
-    """Alpha Helper chatbot turn. `history` is a list of {role, content} (last ~10 kept)."""
+    """Alpha Helper chatbot turn. `history` is a list of {role, content} (last ~10 kept).
+    No key configured -> returns a demo reply so the chat UI is testable without spending credit."""
+    if not _has_key():
+        return _mock_chat(message)
     client = _get_client()
     settings = get_settings()
     messages = []
