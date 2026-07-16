@@ -10,7 +10,7 @@ from fastapi.responses import JSONResponse
 from .config import assert_prod_ready, get_settings
 from .db import SessionLocal, init_db
 from .envelope import ApiError
-from .routers import billing, config, content, peruser, user
+from .routers import ai, billing, config, content, peruser, user
 from .seed import seed_all
 
 settings = get_settings()
@@ -56,6 +56,7 @@ app.include_router(user.router)
 app.include_router(content.router)
 app.include_router(peruser.router)
 app.include_router(billing.router)
+app.include_router(ai.router)
 
 
 @app.get("/health")
