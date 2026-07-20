@@ -17,7 +17,6 @@ from sqlalchemy.orm import Session
 from ..db import Book, Chapter, get_db
 from ..deps import require_api_key
 from ..envelope import ApiError
-from ..llm import chat as llm_chat
 from ..llm import generate_summary
 
 router = APIRouter(prefix="/v1/ai", tags=["ai"], dependencies=[Depends(require_api_key)])
@@ -27,16 +26,6 @@ class SummaryReq(BaseModel):
     title: str
     author: str | None = None
     uid: str | None = None
-
-
-class ChatTurn(BaseModel):
-    role: str
-    content: str
-
-
-class ChatReq(BaseModel):
-    message: str
-    history: list[ChatTurn] = []
 
 
 def _ai_book_id(title: str) -> str:
@@ -108,9 +97,3 @@ def ai_summary(req: SummaryReq, db: Session = Depends(get_db)):
 
     db.commit()
     return _detail(book, chapters)
-
-
-@router.post("/chat")
-def ai_chat(req: ChatReq):
-    reply = llm_chat(req.message, [t.model_dump() for t in req.history])
-    return {"reply": reply}
