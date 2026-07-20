@@ -1,7 +1,8 @@
-"""Claude LLM integration — AI book-summary generation + Alpha Helper chatbot.
+"""Gemini LLM integration — AI book-summary generation (Google Gemini, free tier).
 
-The Anthropic API key lives ONLY here (server-side), read from ANTHROPIC_API_KEY. The Android app
-never sees it — it calls the /v1/ai/* endpoints, which call this module. Model: claude-opus-4-8.
+The Gemini API key lives ONLY here (server-side), read from GEMINI_API_KEY. The Android app never
+sees it — it calls /v1/ai/summary, which calls this module. When no key is set, a demo sample is
+returned so the whole flow works free.
 """
 from __future__ import annotations
 
@@ -16,28 +17,24 @@ _client = None
 
 
 def _has_key() -> bool:
-    return bool(get_settings().anthropic_api_key)
+    return bool(get_settings().gemini_api_key)
 
 
 def _get_client():
-    """Lazily build the Anthropic client so the app still boots without the key/package."""
+    """Lazily build the Gemini client so the app still boots without the key/package."""
     global _client
     settings = get_settings()
-    if not settings.anthropic_api_key:
-        raise ApiError(503, "AI service not configured (set ANTHROPIC_API_KEY)")
+    if not settings.gemini_api_key:
+        raise ApiError(503, "AI service not configured (set GEMINI_API_KEY)")
     if _client is None:
-        import anthropic  # imported lazily
-        _client = anthropic.Anthropic(api_key=settings.anthropic_api_key)
+        from google import genai  # imported lazily
+        _client = genai.Client(api_key=settings.gemini_api_key)
     return _client
-
-
-def _reply_text(resp) -> str:
-    return "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
 
 
 def _extract_json(text: str) -> dict:
     """Pull the first JSON object out of the model reply (tolerates code fences / stray prose)."""
-    text = text.strip()
+    text = (text or "").strip()
     if text.startswith("```"):
         text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.DOTALL).strip()
     try:
@@ -71,8 +68,8 @@ SUMMARY_SYSTEM = (
 
 
 def _mock_summary(title: str, author: Optional[str]) -> dict:
-    """Sample summary used for UI testing when no ANTHROPIC_API_KEY is set (no credit spent)."""
-    demo = "(Nội dung demo để test giao diện — khi backend có ANTHROPIC_API_KEY và tài khoản có credit, phần này do AI thật viết.)"
+    """Sample summary used for UI testing when no GEMINI_API_KEY is set (fully free)."""
+    demo = "(Nội dung demo để test giao diện — khi backend có GEMINI_API_KEY, phần này do AI thật viết.)"
     return {
         "title": title,
         "author": author or "Tác giả",
@@ -97,23 +94,33 @@ def _mock_summary(title: str, author: Optional[str]) -> dict:
 
 
 def generate_summary(title: str, author: Optional[str] = None) -> dict:
-    """Generate a structured book summary via Claude. Returns a normalized dict.
-    No key configured -> returns a demo sample so the UI is testable without spending credit."""
+    """Generate a structured book summary via Gemini. Returns a normalized dict.
+    No key configured -> returns a demo sample so the UI is testable for free."""
     if not _has_key():
         return _mock_summary(title, author)
     client = _get_client()
     settings = get_settings()
+    from google.genai import types  # imported lazily
+
     user = f"Book title: {title}" + (f"\nAuthor: {author}" if author else "")
-    resp = client.messages.create(
-        model=settings.anthropic_model,
-        max_tokens=8000,
-        system=SUMMARY_SYSTEM,
-        messages=[{"role": "user", "content": user}],
-    )
     try:
-        data = _extract_json(_reply_text(resp))
+        resp = client.models.generate_content(
+            model=settings.gemini_model,
+            contents=user,
+            config=types.GenerateContentConfig(
+                system_instruction=SUMMARY_SYSTEM,
+                temperature=0.6,
+                max_output_tokens=8000,
+                response_mime_type="application/json",
+            ),
+        )
+        data = _extract_json(resp.text)
     except (json.JSONDecodeError, ValueError):
         raise ApiError(502, "AI returned an unparseable summary")
+    except ApiError:
+        raise
+    except Exception as e:  # network / model / quota errors from Gemini
+        raise ApiError(502, f"AI generation failed: {e}")
 
     data.setdefault("title", title)
     data.setdefault("author", author or "Unknown")

@@ -14,8 +14,8 @@ google-auth>=2.28
 PyJWT[crypto]>=2.8
 requests>=2.31
 
-# ── AI: Claude (book-summary generation + Alpha Helper chatbot) ───────
-anthropic>=0.70
+# ── AI: Google Gemini (book-summary generation, free tier) ───────────
+google-genai>=1.0
 
 # ── Optional drivers (uncomment for production) ──────────────────────
 # psycopg[binary]>=3.1        # Postgres (set DATABASE_URL=postgresql+psycopg://...)

@@ -13,9 +13,9 @@ class Settings(BaseSettings):
     app_api_key: str = "dev-static-key-change-me"
     database_url: str = "sqlite:///./tinhhoasach.db"
 
-    # AI (Claude) — key lives ONLY server-side; the app calls /v1/ai/* instead of Anthropic directly.
-    anthropic_api_key: str | None = None
-    anthropic_model: str = "claude-opus-4-8"
+    # AI (Google Gemini, free tier) — key lives ONLY server-side; the app calls /v1/ai/* instead.
+    gemini_api_key: str | None = None
+    gemini_model: str = "gemini-2.5-flash"
 
     # Firebase (content rules only; v1 does not verify idToken server-side)
     firebase_project_id: str = "tinhhoasach"

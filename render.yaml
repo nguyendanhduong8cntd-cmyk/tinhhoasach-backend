@@ -20,7 +20,8 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: "3.12.6"
-      # AI features (book-summary generation + Alpha Helper chatbot). Set this in the
+      # AI book-summary generation (Google Gemini, free tier). Set this in the
       # Render dashboard → Environment (sync:false keeps the secret out of git).
-      - key: ANTHROPIC_API_KEY
+      # Get a free key at https://aistudio.google.com (no credit card).
+      - key: GEMINI_API_KEY
         sync: false
