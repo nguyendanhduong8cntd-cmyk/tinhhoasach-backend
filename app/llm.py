@@ -93,34 +93,53 @@ def _mock_summary(title: str, author: Optional[str]) -> dict:
     }
 
 
+def _model_candidates() -> list[str]:
+    """Configured model first, then robust fallbacks — Google deprecates specific versions for
+    new accounts, so we try a few current flash models until one is available to this key."""
+    prefer = [
+        get_settings().gemini_model,
+        "gemini-flash-latest",
+        "gemini-3.5-flash",
+        "gemini-2.5-flash-lite",
+        "gemini-2.0-flash",
+    ]
+    out: list[str] = []
+    for m in prefer:
+        if m and m not in out:
+            out.append(m)
+    return out
+
+
 def generate_summary(title: str, author: Optional[str] = None) -> dict:
     """Generate a structured book summary via Gemini. Returns a normalized dict.
     No key configured -> returns a demo sample so the UI is testable for free."""
     if not _has_key():
         return _mock_summary(title, author)
     client = _get_client()
-    settings = get_settings()
     from google.genai import types  # imported lazily
 
     user = f"Book title: {title}" + (f"\nAuthor: {author}" if author else "")
+    cfg = types.GenerateContentConfig(
+        system_instruction=SUMMARY_SYSTEM,
+        temperature=0.6,
+        max_output_tokens=8000,
+        response_mime_type="application/json",
+    )
+    resp = None
+    last_err: Optional[Exception] = None
+    for model in _model_candidates():
+        try:
+            resp = client.models.generate_content(model=model, contents=user, config=cfg)
+            break
+        except Exception as e:  # model not available for this key / quota / network → try next
+            last_err = e
+            resp = None
+    if resp is None:
+        raise ApiError(502, f"AI generation failed: {last_err}")
     try:
-        resp = client.models.generate_content(
-            model=settings.gemini_model,
-            contents=user,
-            config=types.GenerateContentConfig(
-                system_instruction=SUMMARY_SYSTEM,
-                temperature=0.6,
-                max_output_tokens=8000,
-                response_mime_type="application/json",
-            ),
-        )
         data = _extract_json(resp.text)
     except (json.JSONDecodeError, ValueError):
         raise ApiError(502, "AI returned an unparseable summary")
-    except ApiError:
-        raise
-    except Exception as e:  # network / model / quota errors from Gemini
-        raise ApiError(502, f"AI generation failed: {e}")
 
     data.setdefault("title", title)
     data.setdefault("author", author or "Unknown")

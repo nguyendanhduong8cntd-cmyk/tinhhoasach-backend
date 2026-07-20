@@ -15,7 +15,7 @@ class Settings(BaseSettings):
 
     # AI (Google Gemini, free tier) — key lives ONLY server-side; the app calls /v1/ai/* instead.
     gemini_api_key: str | None = None
-    gemini_model: str = "gemini-2.5-flash"
+    gemini_model: str = "gemini-flash-latest"
 
     # Firebase (content rules only; v1 does not verify idToken server-side)
     firebase_project_id: str = "tinhhoasach"
