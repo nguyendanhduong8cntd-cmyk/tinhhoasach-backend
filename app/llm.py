@@ -119,11 +119,14 @@ def generate_summary(title: str, author: Optional[str] = None) -> dict:
     from google.genai import types  # imported lazily
 
     user = f"Book title: {title}" + (f"\nAuthor: {author}" if author else "")
+    # thinking_budget=0 disables the default "thinking" on 2.5/3.x flash — otherwise it can eat the
+    # whole output-token budget and return empty text.
     cfg = types.GenerateContentConfig(
         system_instruction=SUMMARY_SYSTEM,
         temperature=0.6,
         max_output_tokens=8000,
         response_mime_type="application/json",
+        thinking_config=types.ThinkingConfig(thinking_budget=0),
     )
     resp = None
     last_err: Optional[Exception] = None
@@ -136,10 +139,11 @@ def generate_summary(title: str, author: Optional[str] = None) -> dict:
             resp = None
     if resp is None:
         raise ApiError(502, f"AI generation failed: {last_err}")
+    raw = (getattr(resp, "text", None) or "").strip()
     try:
-        data = _extract_json(resp.text)
+        data = _extract_json(raw)
     except (json.JSONDecodeError, ValueError):
-        raise ApiError(502, "AI returned an unparseable summary")
+        raise ApiError(502, f"AI returned an unparseable summary (len={len(raw)}): {raw[:180]}")
 
     data.setdefault("title", title)
     data.setdefault("author", author or "Unknown")
