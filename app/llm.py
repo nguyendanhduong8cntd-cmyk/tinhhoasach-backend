@@ -320,3 +320,41 @@ def translate_fields(description: str, insights: list, target_language: str) -> 
         }
     except Exception:
         return None  # never let a translation hiccup break book loading — serve the source text
+
+
+# ── Diagnostics (temporary; never returns the key itself) ─────────────────────
+def diagnose() -> dict:
+    """List the models this API key can actually reach + probe each fallback candidate with a tiny
+    generate, reporting per-model success/error. Lets us see WHY generation 429s (quota vs model
+    unavailable) without exposing the key. Remove once the key situation is resolved."""
+    out: dict = {"has_key": _has_key(), "candidates": _model_candidates()}
+    if not _has_key():
+        return out
+    try:
+        client = _get_client()
+    except Exception as e:
+        out["client_error"] = repr(e)[:300]
+        return out
+    try:
+        names = []
+        for m in client.models.list():
+            nm = getattr(m, "name", "")
+            acts = getattr(m, "supported_actions", None)
+            names.append(nm + (f" [{','.join(acts)}]" if acts else ""))
+        out["available_models"] = names
+    except Exception as e:
+        out["list_error"] = repr(e)[:300]
+    from google.genai import types  # imported lazily
+    probes: dict = {}
+    for model in _model_candidates():
+        try:
+            r = client.models.generate_content(
+                model=model, contents="Reply with the single word OK",
+                config=types.GenerateContentConfig(
+                    max_output_tokens=5,
+                    thinking_config=types.ThinkingConfig(thinking_budget=0)))
+            probes[model] = {"ok": True, "text": (getattr(r, "text", "") or "")[:40]}
+        except Exception as e:
+            probes[model] = {"ok": False, "error": repr(e)[:400]}
+    out["probes"] = probes
+    return out

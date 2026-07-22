@@ -17,7 +17,7 @@ from sqlalchemy.orm import Session
 from ..db import Book, Chapter, get_db
 from ..deps import require_api_key
 from ..envelope import ApiError
-from ..llm import chat, generate_summary
+from ..llm import chat, diagnose, generate_summary
 
 router = APIRouter(prefix="/v1/ai", tags=["ai"], dependencies=[Depends(require_api_key)])
 
@@ -115,3 +115,9 @@ def ai_chat(req: ChatReq):
     if not msgs:
         raise ApiError(400, "messages is required")
     return {"reply": chat(msgs)}
+
+
+@router.get("/_diag")
+def ai_diag():
+    """TEMP diagnostic: which Gemini models this key can reach + per-model probe. Never returns the key."""
+    return diagnose()
