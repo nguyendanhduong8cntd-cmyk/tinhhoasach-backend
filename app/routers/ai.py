@@ -17,7 +17,7 @@ from sqlalchemy.orm import Session
 from ..db import Book, Chapter, get_db
 from ..deps import require_api_key
 from ..envelope import ApiError
-from ..llm import generate_summary
+from ..llm import chat, generate_summary
 
 router = APIRouter(prefix="/v1/ai", tags=["ai"], dependencies=[Depends(require_api_key)])
 
@@ -26,6 +26,15 @@ class SummaryReq(BaseModel):
     title: str
     author: str | None = None
     uid: str | None = None
+
+
+class ChatMsg(BaseModel):
+    role: str          # 'user' | 'assistant'
+    content: str
+
+
+class ChatReq(BaseModel):
+    messages: list[ChatMsg]
 
 
 def _ai_book_id(title: str) -> str:
@@ -97,3 +106,12 @@ def ai_summary(req: SummaryReq, db: Session = Depends(get_db)):
 
     db.commit()
     return _detail(book, chapters)
+
+
+@router.post("/chat")
+def ai_chat(req: ChatReq):
+    """Alpha Helper chatbot. Body: {messages:[{role,content}...]} -> {reply: str}."""
+    msgs = [{"role": m.role, "content": m.content} for m in req.messages if (m.content or "").strip()]
+    if not msgs:
+        raise ApiError(400, "messages is required")
+    return {"reply": chat(msgs)}

@@ -155,3 +155,72 @@ def generate_summary(title: str, author: Optional[str] = None) -> dict:
         data["chapters"] = []
     data.setdefault("final_summary", "")
     return data
+
+
+# ── Alpha Helper chatbot ─────────────────────────────────────────────────────
+CHAT_SYSTEM = (
+    "You are Alpha Helper, a friendly and concise reading assistant living inside a book-summary "
+    "app called 'AI Book Summaries & Ideas'. Help the user discover books, explain key ideas and "
+    "concepts, summarize topics, and give reading recommendations. ALWAYS reply in the SAME LANGUAGE "
+    "as the user's last message (Vietnamese in -> Vietnamese out; English in -> English out). Keep "
+    "answers short and useful — usually 2-5 sentences — using plain text (no markdown headings, no "
+    "tables). When recommending books, list a few titles with a one-line reason each. If the user "
+    "asks something unrelated to books, reading, ideas or self-improvement, answer briefly and gently "
+    "steer back to how you can help with books."
+)
+
+
+def _mock_chat(messages: list[dict]) -> str:
+    """Demo reply when no GEMINI_API_KEY is set (keeps the chat UI testable for free)."""
+    last = ""
+    for m in reversed(messages):
+        if m.get("role") == "user":
+            last = (m.get("content") or "").strip()
+            break
+    return (
+        f"(demo) Mình là Alpha Helper 🤖. Bạn vừa hỏi: \"{last}\". "
+        "Khi backend có GEMINI_API_KEY, mình sẽ trả lời thật bằng AI nhé!"
+    )
+
+
+def chat(messages: list[dict]) -> str:
+    """Multi-turn chat reply via Gemini. `messages` = [{role: 'user'|'assistant', content: str}, ...].
+    No key configured -> returns a demo reply so the UI is testable for free."""
+    if not _has_key():
+        return _mock_chat(messages)
+    client = _get_client()
+    from google.genai import types  # imported lazily
+
+    # Map to Gemini roles ('user'/'model') and drop any leading non-user turns (Gemini requires the
+    # conversation to start with a user message; our UI's welcome bubble is assistant-first).
+    contents: list[dict] = []
+    for m in messages:
+        text = (m.get("content") or "").strip()
+        if not text:
+            continue
+        role = "model" if m.get("role") == "assistant" else "user"
+        if not contents and role == "model":
+            continue  # skip leading assistant/welcome turns
+        contents.append({"role": role, "parts": [{"text": text}]})
+    if not contents:
+        raise ApiError(400, "no user message to reply to")
+
+    cfg = types.GenerateContentConfig(
+        system_instruction=CHAT_SYSTEM,
+        temperature=0.7,
+        max_output_tokens=1200,
+        thinking_config=types.ThinkingConfig(thinking_budget=0),
+    )
+    resp = None
+    last_err: Optional[Exception] = None
+    for model in _model_candidates():
+        try:
+            resp = client.models.generate_content(model=model, contents=contents, config=cfg)
+            break
+        except Exception as e:
+            last_err = e
+            resp = None
+    if resp is None:
+        raise ApiError(502, f"AI chat failed: {last_err}")
+    reply = (getattr(resp, "text", None) or "").strip()
+    return reply or "…"
