@@ -327,8 +327,16 @@ def diagnose() -> dict:
     """List the models this API key can actually reach + probe each fallback candidate with a tiny
     generate, reporting per-model success/error. Lets us see WHY generation 429s (quota vs model
     unavailable) without exposing the key. Remove once the key situation is resolved."""
-    out: dict = {"has_key": _has_key(), "candidates": _model_candidates()}
-    if not _has_key():
+    import hashlib
+    key = get_settings().gemini_api_key or ""
+    out: dict = {
+        "has_key": bool(key),
+        "key_len": len(key),                                    # a real Gemini key is ~39 chars
+        "key_tail4": key[-4:] if key else "",                   # last 4 only — lets YOU confirm it's the key you pasted
+        "key_fp": hashlib.sha256(key.encode()).hexdigest()[:10] if key else "",  # changes iff the key value changes
+        "candidates": _model_candidates(),
+    }
+    if not key:
         return out
     try:
         client = _get_client()
