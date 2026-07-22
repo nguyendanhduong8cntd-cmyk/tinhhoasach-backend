@@ -98,6 +98,20 @@ class Chapter(Base):
     audio_path = Column(String)                                      # storage path; signed at read time
 
 
+class Translation(Base):
+    """Lazy cache of AI-translated book fields (Tổng quan + Ý tưởng chính) per (book, language).
+
+    The catalogue is stored in one source language; when the app requests a book in another
+    language we translate ``description`` + ``insights`` via Gemini ONCE and store the result here,
+    so every later open in that language is an instant DB read (no repeat LLM call / latency)."""
+    __tablename__ = "translations"
+    book_id = Column(String, primary_key=True)
+    lang = Column(String, primary_key=True)      # canonical target code e.g. 'vi','es','zh-TW','pt-BR'
+    description = Column(Text)
+    insights = Column(JSON)                       # list[str]
+    created_at = Column(BigInteger, default=now_ms)
+
+
 class Category(Base):
     __tablename__ = "categories"
     id = Column(String, primary_key=True)

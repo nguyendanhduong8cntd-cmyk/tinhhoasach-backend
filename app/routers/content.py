@@ -12,11 +12,12 @@ from fastapi import APIRouter, Depends, Path, Query
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
-from ..db import Book, Category, Chapter, FreeDaily, User, get_db
+from ..db import Book, Category, Chapter, FreeDaily, Translation, User, get_db, now_ms
 from ..deps import require_api_key
 from ..entitlement import refresh_entitlement
 from ..envelope import ApiError
 from ..storage import sign_audio_url
+from .. import llm
 
 router = APIRouter(prefix="/v1", tags=["content"], dependencies=[Depends(require_api_key)])
 
@@ -76,8 +77,40 @@ def search_books(q: str = Query(..., min_length=1), limit: int = Query(20, ge=1,
     return {"books": [_book_card(b) for b in rows], "page": 1, "has_more": False}
 
 
+def _localized_fields(db: Session, book: Book, lang: str) -> tuple[str, list]:
+    """Return (description, insights) for `book` in the requested language.
+
+    English / empty / unsupported → the stored source text unchanged. Otherwise: serve the cached
+    translation if present, else translate ONCE via Gemini and cache it. Any failure falls back to
+    the source text so book loading can never break on a translation problem."""
+    src_desc = book.description or ""
+    src_insights = book.insights or []
+    canon = llm.canonical_lang(lang)
+    if canon is None:
+        return src_desc, src_insights
+    code, name = canon
+
+    cached = db.get(Translation, (book.id, code))
+    if cached is not None:
+        return cached.description or src_desc, cached.insights or src_insights
+
+    tr = llm.translate_fields(src_desc, src_insights, name)
+    if not tr:
+        return src_desc, src_insights  # no key / LLM error → source text
+
+    # Cache for next time. Guard the write so a concurrent first-open of the same book+lang can't 500.
+    try:
+        db.add(Translation(book_id=book.id, lang=code, description=tr["description"],
+                            insights=tr["insights"], created_at=now_ms()))
+        db.commit()
+    except Exception:
+        db.rollback()
+    return tr["description"], tr["insights"]
+
+
 @router.get("/books/{book_id}")
-def get_book(book_id: str = Path(...), uid: str = Query(...), db: Session = Depends(get_db)):
+def get_book(book_id: str = Path(...), uid: str = Query(...), lang: str = Query(""),
+             db: Session = Depends(get_db)):
     book = db.get(Book, book_id)
     if book is None:
         raise ApiError(404, "Book not found")
@@ -105,11 +138,14 @@ def get_book(book_id: str = Path(...), uid: str = Query(...), db: Session = Depe
             "locked": locked,
         })
 
+    # Tổng quan (description) + Ý tưởng chính (insights) localized to the app's language (cached).
+    loc_desc, loc_insights = _localized_fields(db, book, lang)
+
     return {
         "id": book.id, "title": book.title, "author": book.author,
-        "cover_url": book.cover_url, "description": book.description,
+        "cover_url": book.cover_url, "description": loc_desc,
         "duration_min": book.duration_min, "pro_only": bool(book.pro_only),
         "is_free_today": is_free_today,
-        "insights": book.insights or [],
+        "insights": loc_insights,
         "chapters": out_chapters,
     }

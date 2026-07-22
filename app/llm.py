@@ -224,3 +224,99 @@ def chat(messages: list[dict]) -> str:
         raise ApiError(502, f"AI chat failed: {last_err}")
     reply = (getattr(resp, "text", None) or "").strip()
     return reply or "…"
+
+
+# ── Book-field translation (Tổng quan + Ý tưởng chính) ────────────────────────
+# Maps the language tag the app sends (built from the user's chosen in-app language) to a canonical
+# cache key + the human language NAME we hand Gemini. Regional variants collapse to one target EXCEPT
+# where the difference is meaningful (Simplified vs Traditional Chinese, Brazilian vs European
+# Portuguese). Anything starting with "en" (the source language) or unknown → NOT translated.
+_LANG_NAMES = {
+    "vi": "Vietnamese", "ar": "Arabic", "de": "German", "es": "Spanish", "fa": "Persian",
+    "fr": "French", "hi": "Hindi", "id": "Indonesian", "it": "Italian", "iw": "Hebrew",
+    "he": "Hebrew", "ja": "Japanese", "ko": "Korean", "nl": "Dutch", "ru": "Russian",
+    "tr": "Turkish", "uk": "Ukrainian",
+    "pt": "European Portuguese", "pt-BR": "Brazilian Portuguese",
+    "zh": "Simplified Chinese", "zh-TW": "Traditional Chinese",
+}
+
+
+def canonical_lang(tag: Optional[str]):
+    """(tag from the app) -> (canonical_cache_key, language_name) or None when it shouldn't translate.
+
+    None means: source language (English), empty, or unsupported → serve the original text as-is."""
+    if not tag:
+        return None
+    t = tag.strip().replace("_", "-")
+    low = t.lower()
+    if low.startswith("en"):
+        return None                                  # source language — nothing to translate
+    lang = low.split("-")[0]
+    region = t.split("-")[1].upper() if "-" in t else ""
+    # meaningful regional splits
+    if lang == "zh":
+        canon = "zh-TW" if region in ("TW", "HK", "MO") or "hant" in low else "zh"
+    elif lang == "pt":
+        canon = "pt-BR" if region == "BR" else "pt"
+    elif lang == "in":                               # legacy Android code for Indonesian
+        canon = "id"
+    elif lang == "iw":                               # legacy Android code for Hebrew
+        canon = "he"
+    else:
+        canon = lang
+    name = _LANG_NAMES.get(canon)
+    if not name:
+        return None
+    return canon, name
+
+
+TRANSLATE_SYSTEM = (
+    "You are a professional localizer for a book-summary app. You translate short UI content — a "
+    "book's one-line overview and its list of key-idea bullet points — from English into a target "
+    "language. Translate faithfully and naturally, the way a native reader would expect. Keep the "
+    "meaning, tone and length similar. Do NOT translate well-known proper nouns, brand names or the "
+    "book/author name. Keep the SAME NUMBER of insight items, in the SAME ORDER.\n\n"
+    "Return ONLY a JSON object — no prose, no markdown, no code fences — of EXACTLY this shape:\n"
+    '{ "description": string, "insights": [string] }'
+)
+
+
+def translate_fields(description: str, insights: list, target_language: str) -> Optional[dict]:
+    """Translate a book's description + insights into ``target_language`` (a language NAME).
+    Returns {"description", "insights"} or None on any failure / no key (caller falls back to source)."""
+    if not _has_key():
+        return None
+    try:
+        client = _get_client()
+        from google.genai import types  # imported lazily
+
+        payload = json.dumps({"description": description or "", "insights": insights or []},
+                             ensure_ascii=False)
+        user = f"Target language: {target_language}\n\nTranslate this JSON:\n{payload}"
+        cfg = types.GenerateContentConfig(
+            system_instruction=TRANSLATE_SYSTEM,
+            temperature=0.3,
+            max_output_tokens=2000,
+            response_mime_type="application/json",
+            thinking_config=types.ThinkingConfig(thinking_budget=0),
+        )
+        resp = None
+        for model in _model_candidates():
+            try:
+                resp = client.models.generate_content(model=model, contents=user, config=cfg)
+                break
+            except Exception:
+                resp = None
+        if resp is None:
+            return None
+        data = _extract_json((getattr(resp, "text", None) or "").strip())
+        out_desc = data.get("description")
+        out_ins = data.get("insights")
+        if not isinstance(out_ins, list):
+            out_ins = insights or []
+        return {
+            "description": out_desc if isinstance(out_desc, str) and out_desc.strip() else (description or ""),
+            "insights": [str(x) for x in out_ins],
+        }
+    except Exception:
+        return None  # never let a translation hiccup break book loading — serve the source text
