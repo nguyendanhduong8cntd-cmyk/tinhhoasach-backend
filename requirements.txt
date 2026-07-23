@@ -17,6 +17,11 @@ requests>=2.31
 # ── AI: Google Gemini (book-summary generation, free tier) ───────────
 google-genai>=1.0
 
+# ── Book-field translation: Google Translate, no API key / no quota ───
+# Used by llm.translate_fields for Tổng quan + Ý tưởng chính. Chosen over Gemini because the
+# Gemini free tier returns limit:0 (429) on every model for newly-created keys.
+deep-translator>=1.11
+
 # ── Optional drivers (uncomment for production) ──────────────────────
 # psycopg[binary]>=3.1        # Postgres (set DATABASE_URL=postgresql+psycopg://...)
 # firebase-admin>=6.5         # only if you later verify Firebase idToken (v1 does NOT)

@@ -94,9 +94,9 @@ def _localized_fields(db: Session, book: Book, lang: str) -> tuple[str, list]:
     if cached is not None:
         return cached.description or src_desc, cached.insights or src_insights
 
-    tr = llm.translate_fields(src_desc, src_insights, name)
+    tr = llm.translate_fields(src_desc, src_insights, code, name)
     if not tr:
-        return src_desc, src_insights  # no key / LLM error → source text
+        return src_desc, src_insights  # translation engine failed → source text
 
     # Cache for next time. Guard the write so a concurrent first-open of the same book+lang can't 500.
     try:

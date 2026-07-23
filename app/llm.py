@@ -270,54 +270,46 @@ def canonical_lang(tag: Optional[str]):
     return canon, name
 
 
-TRANSLATE_SYSTEM = (
-    "You are a professional localizer for a book-summary app. You translate short UI content — a "
-    "book's one-line overview and its list of key-idea bullet points — from English into a target "
-    "language. Translate faithfully and naturally, the way a native reader would expect. Keep the "
-    "meaning, tone and length similar. Do NOT translate well-known proper nouns, brand names or the "
-    "book/author name. Keep the SAME NUMBER of insight items, in the SAME ORDER.\n\n"
-    "Return ONLY a JSON object — no prose, no markdown, no code fences — of EXACTLY this shape:\n"
-    '{ "description": string, "insights": [string] }'
-)
+# Canonical cache code -> Google Translate target code. Google Translate has no Brazilian/European
+# Portuguese split, so pt-BR collapses to "pt"; Chinese keeps the meaningful Simplified/Traditional
+# split; Hebrew uses Google's legacy "iw".
+_GT_CODES = {
+    "vi": "vi", "ar": "ar", "de": "de", "es": "es", "fa": "fa", "fr": "fr", "hi": "hi",
+    "id": "id", "it": "it", "he": "iw", "ja": "ja", "ko": "ko", "nl": "nl", "ru": "ru",
+    "tr": "tr", "uk": "uk", "pt": "pt", "pt-BR": "pt", "zh": "zh-CN", "zh-TW": "zh-TW",
+}
 
 
-def translate_fields(description: str, insights: list, target_language: str) -> Optional[dict]:
-    """Translate a book's description + insights into ``target_language`` (a language NAME).
-    Returns {"description", "insights"} or None on any failure / no key (caller falls back to source)."""
-    if not _has_key():
+def translate_fields(description: str, insights: list, canon_code: str,
+                     target_language: Optional[str] = None) -> Optional[dict]:
+    """Translate a book's description + insights into the language of ``canon_code``.
+
+    Engine = Google Translate via deep-translator: NO API key, NO quota, NO billing. We moved off
+    Gemini here because newly-created Gemini keys return free-tier ``limit: 0`` (429) on every model,
+    which made this feature unusable. Each string is translated individually so the insight list
+    keeps its exact length and order.
+
+    Returns {"description", "insights"} or None on any failure (caller then serves the English source
+    text, so book loading can never break on a translation problem). Result is cached by the caller,
+    so this runs at most once per (book, language)."""
+    gt_code = _GT_CODES.get(canon_code)
+    if not gt_code:
         return None
     try:
-        client = _get_client()
-        from google.genai import types  # imported lazily
+        from deep_translator import GoogleTranslator  # imported lazily
 
-        payload = json.dumps({"description": description or "", "insights": insights or []},
-                             ensure_ascii=False)
-        user = f"Target language: {target_language}\n\nTranslate this JSON:\n{payload}"
-        cfg = types.GenerateContentConfig(
-            system_instruction=TRANSLATE_SYSTEM,
-            temperature=0.3,
-            max_output_tokens=2000,
-            response_mime_type="application/json",
-            thinking_config=types.ThinkingConfig(thinking_budget=0),
-        )
-        resp = None
-        for model in _model_candidates():
-            try:
-                resp = client.models.generate_content(model=model, contents=user, config=cfg)
-                break
-            except Exception:
-                resp = None
-        if resp is None:
-            return None
-        data = _extract_json((getattr(resp, "text", None) or "").strip())
-        out_desc = data.get("description")
-        out_ins = data.get("insights")
-        if not isinstance(out_ins, list):
-            out_ins = insights or []
-        return {
-            "description": out_desc if isinstance(out_desc, str) and out_desc.strip() else (description or ""),
-            "insights": [str(x) for x in out_ins],
-        }
+        translator = GoogleTranslator(source="auto", target=gt_code)
+
+        def _tr(text: str) -> str:
+            text = text or ""
+            if not text.strip():
+                return text
+            out = translator.translate(text)
+            return out if isinstance(out, str) and out.strip() else text
+
+        out_desc = _tr(description or "")
+        out_insights = [_tr(str(x)) for x in (insights or [])]
+        return {"description": out_desc, "insights": out_insights}
     except Exception:
         return None  # never let a translation hiccup break book loading — serve the source text
 
