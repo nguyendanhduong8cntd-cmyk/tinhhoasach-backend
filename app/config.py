@@ -13,7 +13,14 @@ class Settings(BaseSettings):
     app_api_key: str = "dev-static-key-change-me"
     database_url: str = "sqlite:///./tinhhoasach.db"
 
-    # AI (Google Gemini, free tier) — key lives ONLY server-side; the app calls /v1/ai/* instead.
+    # AI — keys live ONLY server-side; the app calls /v1/ai/* instead.
+    # Provider order is Groq -> Cerebras -> Gemini (see llm._provider_chain). Groq/Cerebras are
+    # OpenAI-compatible and have real free tiers; Gemini is last because newly-created free keys
+    # return quota limit:0 on every model.
+    groq_api_key: str | None = None
+    groq_model: str | None = None          # optional pin; otherwise a candidate list + auto-discovery
+    cerebras_api_key: str | None = None
+    cerebras_model: str | None = None
     gemini_api_key: str | None = None
     gemini_model: str = "gemini-flash-latest"
 
