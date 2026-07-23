@@ -12,7 +12,7 @@ import datetime
 import json
 import os
 
-from sqlalchemy import select
+from sqlalchemy import delete, select
 from sqlalchemy.orm import Session
 
 from .db import Book, Category, Chapter, FreeDaily
@@ -51,7 +51,26 @@ def _load_seed() -> dict:
             "free_daily": [{"date": today, "book_ids": ["b_001"]}]}
 
 
+def purge_ghost_books(db: Session) -> int:
+    """Delete non-catalog "ghost" books that AI summary generation persisted in the past.
+
+    The seeded catalogue uses ids ``b_001``..``b_100``; ``/v1/ai/summary`` used to save generated
+    books as ``ai-<slug>-<hash>`` rows, which then leaked into the catalogue/search (e.g. "Sách Gáy").
+    That feature is now disabled in the app, so any book whose id doesn't start with ``b_`` is a ghost
+    and is removed here on every boot (with its chapters). Returns how many books were deleted."""
+    ghost_ids = [
+        row[0] for row in db.execute(select(Book.id).where(~Book.id.like("b\\_%", escape="\\"))).all()
+    ]
+    if not ghost_ids:
+        return 0
+    db.execute(delete(Chapter).where(Chapter.book_id.in_(ghost_ids)))
+    db.execute(delete(Book).where(Book.id.in_(ghost_ids)))
+    db.commit()
+    return len(ghost_ids)
+
+
 def seed_all(db: Session) -> None:
+    purge_ghost_books(db)  # always drop leaked AI "ghost" books, even when the catalogue is seeded
     if db.execute(select(Book).limit(1)).first():
         return  # already seeded
 
