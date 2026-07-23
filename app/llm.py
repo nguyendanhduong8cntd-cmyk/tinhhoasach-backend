@@ -102,9 +102,17 @@ def _oai_chat(p: dict, model: str, messages: list[dict], *, temperature: float,
                       headers={"Authorization": f"Bearer {p['key']}",
                                "Content-Type": "application/json"},
                       json=payload, timeout=timeout)
+    # Decode the body as UTF-8 OURSELVES. requests falls back to ISO-8859-1 when the response has no
+    # charset in Content-Type, which mangles Vietnamese into mojibake and can emit lone surrogates
+    # that make json.loads fail on an otherwise well-formed summary.
+    body = r.content.decode("utf-8", errors="replace")
     if r.status_code >= 400:
-        raise RuntimeError(f"HTTP {r.status_code}: {r.text[:160]}")
-    return (r.json()["choices"][0]["message"].get("content") or "").strip()
+        raise RuntimeError(f"HTTP {r.status_code}: {body[:160]}")
+    data = json.loads(body)
+    choice = (data.get("choices") or [{}])[0]
+    if choice.get("finish_reason") == "length" and json_mode:
+        raise RuntimeError("truncated at max_tokens (JSON incomplete)")
+    return ((choice.get("message") or {}).get("content") or "").strip()
 
 
 def _run_provider_chain(messages: list[dict], *, errors: list[str], temperature: float = 0.7,
